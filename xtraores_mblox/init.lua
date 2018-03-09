@@ -6,7 +6,7 @@ minetest.register_craft({
 	}
 })
 minetest.register_node("xtraores_mblox:redmarble_column", {
-	description = "red marble column",
+	description = "Red Marble Column",
 	drawtype = "nodebox",
 			node_box = {
 				type = "fixed",
@@ -33,7 +33,7 @@ minetest.register_craft({
 })
 
 minetest.register_node("xtraores_mblox:bluemarble_column", {
-	description = "blue marble column",
+	description = "Blue Marble Column",
 	drawtype = "nodebox",
 			node_box = {
 				type = "fixed",
@@ -60,7 +60,7 @@ minetest.register_craft({
 })
 
 minetest.register_node("xtraores_mblox:blackmarble_column", {
-	description = "black marble column",
+	description = "Black Marble Column",
 	drawtype = "nodebox",
 			node_box = {
 				type = "fixed",
@@ -87,7 +87,7 @@ minetest.register_craft({
 })
 
 minetest.register_node("xtraores_mblox:marble_column", {
-	description = "white marble column",
+	description = "White Marble Column",
 	drawtype = "nodebox",
 			node_box = {
 				type = "fixed",

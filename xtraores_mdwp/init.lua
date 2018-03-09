@@ -1,12 +1,12 @@
 
 minetest.register_craftitem("xtraores_mdwp:charge", {
-	description = "power charge (ammo for laser riffle!)",
+	description = "Power Charge",
 	stack_max = 200,
 	inventory_image = "xtraores_charge.png",
 })
 
 minetest.register_tool("xtraores_mdwp:laser_riffle", {
-	description = "laser riffle (needs power charge to shoot|ammo might be expensive, but its worth it for 250dmg!)",
+	description = "Laser Riffle | 250 dmg (requries power charge)",
 	inventory_image = "xtraores_laser_riffle.png",
 	on_use = function(itemstack, user, pointed_thing)
 		local inv = user:get_inventory()
@@ -24,7 +24,7 @@ minetest.register_tool("xtraores_mdwp:laser_riffle", {
 			pos.y = pos.y + 1.6
 			local obj = minetest.add_entity(pos, "xtraores_mdwp:lb")
 			if obj then
-				minetest.sound_play("shot2", {object=obj})
+				minetest.sound_play("shot_laser", {object=obj})
 				obj:setvelocity({x=dir.x * 50, y=dir.y * 50, z=dir.z * 50})
 				obj:setacceleration({x=dir.x * 0, y=0, z=dir.z * 0})
 				obj:setyaw(yaw + math.pi)
@@ -113,7 +113,7 @@ minetest.register_craft({
 })
 
 minetest.register_tool("xtraores_mdwp:rainbowgun", {
-	description = "rainbow gun (dosen't need ammo!|the most colorful death possible with 45 dmg each shot)",
+	description = "Rainbow Gun | 45 dmg (ammo not required)",
 	inventory_image = "xtraores_rainbowgun.png",
 	on_use = function(itemstack, user, pointed_thing)
 		local inv = user:get_inventory()
@@ -129,9 +129,9 @@ minetest.register_tool("xtraores_mdwp:rainbowgun", {
 		local yaw = user:get_look_yaw()
 		if pos and dir and yaw then
 			pos.y = pos.y + 1.6
-			local obj = minetest.add_entity(pos, "xtraores_mdwp:lb")
+			local obj = minetest.add_entity(pos, "xtraores_mdwp:rb")
 			if obj then
-				minetest.sound_play("shot2", {object=obj})
+				minetest.sound_play("shot_laser", {object=obj})
 				obj:setvelocity({x=dir.x * 50, y=dir.y * 50, z=dir.z * 50})
 				obj:setacceleration({x=dir.x * 0, y=0, z=dir.z * 0})
 				obj:setyaw(yaw + math.pi)
@@ -150,7 +150,7 @@ local XTRAORES_MDWP_RB = {
 	timer = 0,
 	visual = "sprite",
 	visual_size = {x=0.9, y=0.9,},
-	textures = {'xtraores_rainbow.png'},
+	textures = {'xolaser_rainbow.png'},
 	lastpos= {},
 	collisionbox = {0, 0, 0, 0, 0, 0},
 }

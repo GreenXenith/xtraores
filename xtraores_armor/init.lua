@@ -1,59 +1,59 @@
 	minetest.register_tool("xtraores_armor:helmet_platinum", {
-		description = "platinum Helmet",
+		description = "Platinum Helmet",
 		inventory_image = "xtraores_armor_inv_helmet_platinum.png",
 		groups = {armor_head=12, armor_heal=7, armor_use=200},
 		wear = 0,
 	})
 	minetest.register_tool("xtraores_armor:chestplate_platinum", {
-		description = "platinum Chestplate",
+		description = "Platinum Chestplate",
 		inventory_image = "xtraores_armor_inv_chestplate_platinum.png",
 		groups = {armor_torso=17, armor_heal=7, armor_use=200},
 		wear = 0,
 	})
 	minetest.register_tool("xtraores_armor:leggings_platinum", {
-		description = "platinum Leggings",
+		description = "Platinum Leggings",
 		inventory_image = "xtraores_armor_inv_leggings_platinum.png",
 		groups = {armor_legs=17, armor_heal=7, armor_use=200},
 		wear = 0,
 	})
 	minetest.register_tool("xtraores_armor:boots_platinum", {
-		description = "platinum Boots",
+		description = "Platinum Boots",
 		inventory_image = "xtraores_armor_inv_boots_platinum.png",
 		groups = {armor_feet=12, armor_heal=7, armor_use=200},
 		wear = 0,
 	})
 	minetest.register_tool("xtraores_armor:shield_platinum", {
-		description = "platinum Shield",
+		description = "Platinum Shield",
 		inventory_image = "xtraores_armor_inv_shield_platinum.png",
 		groups = {armor_shield=12, armor_heal=7, armor_use=200},
 		wear = 0,
 	})
 	minetest.register_tool("xtraores_armor:helmet_cobalt", {
-		description = "cobalt Helmet",
+		description = "Cobalt Helmet",
 		inventory_image = "xtraores_armor_inv_helmet_cobalt.png",
 		groups = {armor_head=15, armor_heal=12, physics_speed=0.15, armor_use=75},
 		wear = 0,
 	})
 	minetest.register_tool("xtraores_armor:chestplate_cobalt", {
-		description = "cobalt Chestplate",
+		description = "Cobalt Chestplate",
 		inventory_image = "xtraores_armor_inv_chestplate_cobalt.png",
 		groups = {armor_torso=20, armor_heal=12, physics_speed=0.15, armor_use=75},
 		wear = 0,
 	})
 	minetest.register_tool("xtraores_armor:leggings_cobalt", {
-		description = "cobalt Leggings",
+		description = "Cobalt Leggings",
 		inventory_image = "xtraores_armor_inv_leggings_cobalt.png",
 		groups = {armor_legs=20, armor_heal=12, physics_speed=0.15, armor_use=75},
 		wear = 0,
 	})
 	minetest.register_tool("xtraores_armor:boots_cobalt", {
-		description = "cobalt Boots",
+		description = "Cobalt Boots",
 		inventory_image = "xtraores_armor_inv_boots_cobalt.png",
 		groups = {armor_feet=15, armor_heal=12, physics_speed=0.15, armor_use=75},
 		wear = 0,
 	})
 	minetest.register_tool("xtraores_armor:shield_cobalt", {
-		description = "cobalt Shield",
+		description = "Cobalt Shield",
 		inventory_image = "xtraores_armor_inv_shield_cobalt.png",
 		groups = {armor_shield=15, armor_heal=12, physics_speed=0.15, armor_use=75},
 		wear = 0,
@@ -89,122 +89,122 @@
 		wear = 0,
 	})
 	minetest.register_tool("xtraores_armor:helmet_adamantite", {
-		description = "adamantite Helmet",
+		description = "Adamantite Helmet",
 		inventory_image = "xtraores_armor_inv_helmet_adamantite.png",
 		groups = {armor_head=16, armor_heal=12, physics_gravity=-0.15, armor_use=30},
 		wear = 0,
 	})
 	minetest.register_tool("xtraores_armor:chestplate_adamantite", {
-		description = "adamantite Chestplate",
+		description = "Adamantite Chestplate",
 		inventory_image = "xtraores_armor_inv_chestplate_adamantite.png",
 		groups = {armor_torso=21, armor_heal=12, physics_gravity=-0.15, armor_use=30},
 		wear = 0,
 	})
 	minetest.register_tool("xtraores_armor:leggings_adamantite", {
-		description = "adamantite Leggings",
+		description = "Adamantite Leggings",
 		inventory_image = "xtraores_armor_inv_leggings_adamantite.png",
 		groups = {armor_legs=21, armor_heal=12, physics_gravity=-0.15, armor_use=30},
 		wear = 0,
 	})
 	minetest.register_tool("xtraores_armor:boots_adamantite", {
-		description = "adamantite Boots",
+		description = "Adamantite Boots",
 		inventory_image = "xtraores_armor_inv_boots_adamantite.png",
 		groups = {armor_feet=16, armor_heal=12, physics_gravity=-0.15, armor_use=30},
 		wear = 0,
 	})
 	minetest.register_tool("xtraores_armor:shield_adamantite", {
-		description = "adamantite Shield",
+		description = "Adamantite Shield",
 		inventory_image = "xtraores_armor_inv_shield_adamantite.png",
 		groups = {armor_shield=16, armor_heal=12, physics_gravity=-0.15, armor_use=75},
 		wear = 0,
 	})
 	minetest.register_tool("xtraores_armor:helmet_rarium", {
-		description = "rarium Helmet",
+		description = "Rarium Helmet",
 		inventory_image = "xtraores_armor_inv_helmet_rarium.png",
 		groups = {armor_head=16.4, armor_heal=12, physics_gravity=-0.15, physics_speed=0.15, physics_jump=0.15, armor_use=20},
 		wear = 0,
 	})
 	minetest.register_tool("xtraores_armor:chestplate_rarium", {
-		description = "rarium Chestplate",
+		description = "Rarium Chestplate",
 		inventory_image = "xtraores_armor_inv_chestplate_rarium.png",
 		groups = {armor_torso=21.4, armor_heal=12, physics_gravity=-0.15, physics_speed=0.15, physics_jump=0.15, armor_use=20},
 		wear = 0,
 	})
 	minetest.register_tool("xtraores_armor:leggings_rarium", {
-		description = "rarium Leggings",
+		description = "Rarium Leggings",
 		inventory_image = "xtraores_armor_inv_leggings_rarium.png",
 		groups = {armor_legs=21.4, armor_heal=12, physics_gravity=-0.15, physics_speed=0.15, physics_jump=0.15, armor_use=20},
 		wear = 0,
 	})
 	minetest.register_tool("xtraores_armor:boots_rarium", {
-		description = "rarium Boots",
+		description = "Rarium Boots",
 		inventory_image = "xtraores_armor_inv_boots_rarium.png",
 		groups = {armor_feet=16.4, armor_heal=12, physics_gravity=-0.15, physics_speed=0.15, physics_jump=0.15, armor_use=20},
 		wear = 0,
 	})
 	minetest.register_tool("xtraores_armor:shield_rarium", {
-		description = "rarium Shield",
+		description = "Rarium Shield",
 		inventory_image = "xtraores_armor_inv_shield_rarium.png",
 		groups = {armor_shield=16.4, armor_heal=12, physics_gravity=-0.15, physics_speed=0.15, physics_jump=0.15, armor_use=20},
 		wear = 0,
 	})
 	minetest.register_tool("xtraores_armor:helmet_unobtanium", {
-		description = "unobtanium Helmet",
+		description = "Unobtanium Helmet",
 		inventory_image = "xtraores_armor_inv_helmet_unobtanium.png",
 		groups = {armor_head=17, armor_heal=12, physics_gravity=-0.15, physics_speed=0.15, physics_jump=0.15, armor_fire=1, armor_use=20},
 		wear = 0,
 	})
 	minetest.register_tool("xtraores_armor:chestplate_unobtanium", {
-		description = "unobtanium Chestplate",
+		description = "Unobtanium Chestplate",
 		inventory_image = "xtraores_armor_inv_chestplate_unobtanium.png",
 		groups = {armor_torso=22, armor_heal=12, physics_gravity=-0.15, physics_speed=0.15, physics_jump=0.15, armor_fire=1, armor_use=20},
 		wear = 0,
 	})
 	minetest.register_tool("xtraores_armor:leggings_unobtanium", {
-		description = "unobtanium Leggings",
+		description = "Unobtanium Leggings",
 		inventory_image = "xtraores_armor_inv_leggings_unobtanium.png",
 		groups = {armor_legs=22, armor_heal=12, physics_gravity=-0.15, physics_speed=0.15, physics_jump=0.15, armor_fire=1, armor_use=20},
 		wear = 0,
 	})
 	minetest.register_tool("xtraores_armor:boots_unobtanium", {
-		description = "unobtanium Boots",
+		description = "Unobtanium Boots",
 		inventory_image = "xtraores_armor_inv_boots_unobtanium.png",
 		groups = {armor_feet=17, armor_heal=12, physics_gravity=-0.15, physics_speed=0.15, physics_jump=0.15, armor_fire=1, armor_use=20},
 		wear = 0,
 	})
 	minetest.register_tool("xtraores_armor:shield_unobtanium", {
-		description = "unobtanium Shield",
+		description = "Unobtanium Shield",
 		inventory_image = "xtraores_armor_inv_shield_unobtanium.png",
 		groups = {armor_shield=17, armor_heal=12, physics_gravity=-0.15, physics_speed=0.15, physics_jump=0.15, armor_fire=1, armor_use=20},
 		wear = 0,
 	})
 
 	minetest.register_tool("xtraores_armor:helmet_titanium", {
-		description = "titanium Helmet",
+		description = "Titanium Helmet",
 		inventory_image = "xtraores_armor_inv_helmet_titanium.png",
 		groups = {armor_head=17.6, armor_heal=14, physics_gravity=-0.18, physics_speed=0.25, physics_jump=0.16, armor_fire=1, armor_use=20},
 		wear = 0,
 	})
 	minetest.register_tool("xtraores_armor:chestplate_titanium", {
-		description = "titanium Chestplate",
+		description = "Titanium Chestplate",
 		inventory_image = "xtraores_armor_inv_chestplate_titanium.png",
 		groups = {armor_torso=22.6, armor_heal=14, physics_gravity=-0.18, physics_speed=0.25, physics_jump=0.16, armor_fire=1, armor_use=20},
 		wear = 0,
 	})
 	minetest.register_tool("xtraores_armor:leggings_titanium", {
-		description = "titanium Leggings",
+		description = "Titanium Leggings",
 		inventory_image = "xtraores_armor_inv_leggings_titanium.png",
 		groups = {armor_legs=22.6, armor_heal=14, physics_gravity=-0.18, physics_speed=0.25, physics_jump=0.16, armor_fire=1, armor_use=20},
 		wear = 0,
 	})
 	minetest.register_tool("xtraores_armor:boots_titanium", {
-		description = "titanium Boots",
+		description = "Titanium Boots",
 		inventory_image = "xtraores_armor_inv_boots_titanium.png",
 		groups = {armor_feet=17.6, armor_heal=14, physics_gravity=-0.18, physics_speed=0.25, physics_jump=0.16, armor_fire=1, armor_use=20},
 		wear = 0,
 	})
 	minetest.register_tool("xtraores_armor:shield_titanium", {
-		description = "titanium Shield",
+		description = "Titanium Shield",
 		inventory_image = "xtraores_armor_inv_shield_titanium.png",
 		groups = {armor_shield=17.6, armor_heal=14, physics_gravity=-0.18, physics_speed=0.25, physics_jump=0.16, armor_fire=1, armor_use=20},
 		wear = 0,

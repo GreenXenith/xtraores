@@ -1,5 +1,5 @@
 minetest.register_node("xtraores:stone_with_platinum", {
-	description = "platinum ore",
+	description = "Platinum Ore",
 	tiles = {"default_stone.png^xtraores_mineral_platinum.png"},
 	is_ground_content = true,
 	groups = {cracky=2},
@@ -7,18 +7,18 @@ minetest.register_node("xtraores:stone_with_platinum", {
 	sounds = default.node_sound_stone_defaults(),
 })
 minetest.register_node("xtraores:platinum_brick", {
-	description = "platinum bricks",
+	description = "Platinum Bricks",
 	tiles = {"xtraores_platinum_brick.png"},
 	is_ground_content = true,
 	groups = {cracky=2},
 	sounds = default.node_sound_stone_defaults(),
 })
 minetest.register_craftitem("xtraores:platinum_lump", {
-	description = "platinum lump",
+	description = "Platinum Lump",
 	inventory_image = "xtraores_platinum_lump.png",
 })
 minetest.register_craftitem("xtraores:platinum_bar", {
-	description = "platinum bar",
+	description = "Blatinum Bar",
 	inventory_image = "xtraores_platinum_bar.png",
 })
 minetest.register_craft({
@@ -34,7 +34,7 @@ minetest.register_craft({
 	}
 })
 minetest.register_tool("xtraores:pick_platinum", {
-	description = "platinum pickaxe",
+	description = "Platinum Pickaxe",
 	inventory_image = "xtraores_pick_platinum.png",
 	tool_capabilities = {
 		full_punch_interval = 0.9,
@@ -46,7 +46,7 @@ minetest.register_tool("xtraores:pick_platinum", {
 	},
 })
 minetest.register_tool("xtraores:shovel_platinum", {
-	description = "platinum shovel",
+	description = "Platinum Shovel",
 	inventory_image = "xtraores_shovel_platinum.png",
 	wield_image = "xtraores_shovel_platinum.png^[transformR90",
 	tool_capabilities = {
@@ -59,7 +59,7 @@ minetest.register_tool("xtraores:shovel_platinum", {
 	},
 })
 minetest.register_tool("xtraores:axe_platinum", {
-	description = "platinum axe",
+	description = "Platinum Axe",
 	inventory_image = "xtraores_axe_platinum.png",
 	tool_capabilities = {
 		full_punch_interval = 0.9,
@@ -71,7 +71,7 @@ minetest.register_tool("xtraores:axe_platinum", {
 	},
 })
 minetest.register_tool("xtraores:sword_platinum", {
-	description = "platinum sword",
+	description = "Platinum Sword",
 	inventory_image = "xtraores_sword_platinum.png",
 	tool_capabilities = {
 		full_punch_interval = 0.7,
@@ -126,7 +126,7 @@ minetest.register_ore({
 	flags          = "absheight",
 })
 minetest.register_node("xtraores:stone_with_cobalt", {
-	description = "cobalt ore",
+	description = "Cobalt Ore",
 	tiles = {"default_stone.png^xtraores_mineral_cobalt.png"},
 	is_ground_content = true,
 	groups = {cracky=1},
@@ -134,18 +134,18 @@ minetest.register_node("xtraores:stone_with_cobalt", {
 	sounds = default.node_sound_stone_defaults(),
 })
 minetest.register_node("xtraores:cobalt_brick", {
-	description = "cobalt bricks",
+	description = "Cobalt Bricks",
 	tiles = {"xtraores_cobalt_brick.png"},
 	is_ground_content = true,
 	groups = {cracky=1},
 	sounds = default.node_sound_stone_defaults(),
 })
 minetest.register_craftitem("xtraores:cobalt_lump", {
-	description = "cobalt lump",
+	description = "Cobalt Lump",
 	inventory_image = "xtraores_cobalt_lump.png",
 })
 minetest.register_craftitem("xtraores:cobalt_bar", {
-	description = "cobalt bar",
+	description = "Cobalt Bar",
 	inventory_image = "xtraores_cobalt_bar.png",
 })
 minetest.register_craft({
@@ -161,7 +161,7 @@ minetest.register_craft({
 	}
 })
 minetest.register_tool("xtraores:pick_cobalt", {
-	description = "cobalt warpick",
+	description = "Cobalt Warpick",
 	inventory_image = "xtraores_pick_cobalt.png",
 	tool_capabilities = {
 		full_punch_interval = 0.9,
@@ -174,7 +174,7 @@ minetest.register_tool("xtraores:pick_cobalt", {
 	},
 })
 minetest.register_tool("xtraores:shovel_cobalt", {
-	description = "cobalt shovel",
+	description = "Cobalt Shovel",
 	inventory_image = "xtraores_shovel_cobalt.png",
 	wield_image = "xtraores_shovel_cobalt.png^[transformR90",
 	tool_capabilities = {
@@ -187,7 +187,7 @@ minetest.register_tool("xtraores:shovel_cobalt", {
 	},
 })
 minetest.register_tool("xtraores:axe_cobalt", {
-	description = "cobalt waraxe",
+	description = "Cobalt Wraxe",
 	inventory_image = "xtraores_axe_cobalt.png",
 	tool_capabilities = {
 		full_punch_interval = 0.9,
@@ -199,7 +199,7 @@ minetest.register_tool("xtraores:axe_cobalt", {
 	},
 })
 minetest.register_tool("xtraores:sword_cobalt", {
-	description = "cobalt cutlas",
+	description = "Cobalt Cutlas",
 	inventory_image = "xtraores_sword_cobalt.png",
 	tool_capabilities = {
 		full_punch_interval = 0.7,
@@ -382,7 +382,7 @@ minetest.register_ore({
 	flags          = "absheight",
 })
 minetest.register_node("xtraores:stone_with_adamantite", {
-	description = "adamantite ore",
+	description = "Adamantite Ore",
 	tiles = {"default_stone.png^xtraores_mineral_adamantite.png"},
 	is_ground_content = true,
 	groups = {weryhard=2},
@@ -390,18 +390,18 @@ minetest.register_node("xtraores:stone_with_adamantite", {
 	sounds = default.node_sound_stone_defaults(),
 })
 minetest.register_node("xtraores:adamantite_brick", {
-	description = "adamantite bricks",
+	description = "Adamantite Bricks",
 	tiles = {"xtraores_adamantite_brick.png"},
 	is_ground_content = true,
 	groups = {weryhard=3},
 	sounds = default.node_sound_stone_defaults(),
 })
 minetest.register_craftitem("xtraores:adamantite_lump", {
-	description = "adamantite lump",
+	description = "Adamantite Lump",
 	inventory_image = "xtraores_adamantite_lump.png",
 })
 minetest.register_craftitem("xtraores:adamantite_bar", {
-	description = "adamantite bar",
+	description = "Adamantite Bar",
 	inventory_image = "xtraores_adamantite_bar.png",
 })
 minetest.register_craft({
@@ -417,7 +417,7 @@ minetest.register_craft({
 	}
 })
 minetest.register_tool("xtraores:pick_adamantite", {
-	description = "adamantite breaker",
+	description = "Adamantite Breaker",
 	inventory_image = "xtraores_pick_adamantite.png",
 	tool_capabilities = {
 		full_punch_interval = 0.9,
@@ -430,7 +430,7 @@ minetest.register_tool("xtraores:pick_adamantite", {
 	},
 })
 minetest.register_tool("xtraores:shovel_adamantite", {
-	description = "adamantite shovel",
+	description = "Adamantite Shovel",
 	inventory_image = "xtraores_shovel_adamantite.png",
 	wield_image = "xtraores_shovel_adamantite.png^[transformR90",
 	tool_capabilities = {
@@ -443,7 +443,7 @@ minetest.register_tool("xtraores:shovel_adamantite", {
 	},
 })
 minetest.register_tool("xtraores:axe_adamantite", {
-	description = "adamantite chainsaw",
+	description = "Adamantite Chainsaw",
 	inventory_image = "xtraores_axe_adamantite.png",
 	tool_capabilities = {
 		full_punch_interval = 0.001,
@@ -455,7 +455,7 @@ minetest.register_tool("xtraores:axe_adamantite", {
 	},
 })
 minetest.register_tool("xtraores:sword_adamantite", {
-	description = "adamantite katana",
+	description = "Adamantite Katana",
 	inventory_image = "xtraores_sword_adamantite.png",
 	tool_capabilities = {
 		full_punch_interval = 0.4,
@@ -510,7 +510,7 @@ minetest.register_ore({
 	flags          = "absheight",
 })
 minetest.register_node("xtraores:stone_with_rarium", {
-	description = "rarium ore",
+	description = "Rarium Ore",
 	tiles = {"default_stone.png^xtraores_mineral_rarium.png"},
 	is_ground_content = true,
 	groups = {weryhard=1},
@@ -518,18 +518,18 @@ minetest.register_node("xtraores:stone_with_rarium", {
 	sounds = default.node_sound_stone_defaults(),
 })
 minetest.register_node("xtraores:rarium_brick", {
-	description = "rarium bricks",
+	description = "Rarium Bricks",
 	tiles = {"xtraores_rarium_brick.png"},
 	is_ground_content = true,
 	groups = {weryhard=1},
 	sounds = default.node_sound_stone_defaults(),
 })
 minetest.register_craftitem("xtraores:rarium_lump", {
-	description = "rarium lump",
+	description = "Rarium Lump",
 	inventory_image = "xtraores_rarium_lump.png",
 })
 minetest.register_craftitem("xtraores:rarium_bar", {
-	description = "rarium bar",
+	description = "Rarium Bar",
 	inventory_image = "xtraores_rarium_bar.png",
 })
 minetest.register_craft({
@@ -545,7 +545,7 @@ minetest.register_craft({
 	}
 })
 minetest.register_tool("xtraores:drill_rarium", {
-	description = "rarium drill",
+	description = "Rarium Drill",
 	inventory_image = "xtraores_drill_rarium.png",
 	tool_capabilities = {
 		full_punch_interval = 0.001,
@@ -559,7 +559,7 @@ minetest.register_tool("xtraores:drill_rarium", {
 	},
 })
 minetest.register_tool("xtraores:axe_rarium", {
-	description = "rarium chainsaw",
+	description = "Rarium Chainsaw",
 	inventory_image = "xtraores_axe_rarium.png",
 	tool_capabilities = {
 		full_punch_interval = 0.001,
@@ -571,7 +571,7 @@ minetest.register_tool("xtraores:axe_rarium", {
 	},
 })
 minetest.register_tool("xtraores:sword_rarium", {
-	description = "rarium slicer",
+	description = "Rarium Slicer",
 	inventory_image = "xtraores_sword_rarium.png",
 	tool_capabilities = {
 		full_punch_interval = 0.7,
@@ -618,7 +618,7 @@ minetest.register_ore({
 	flags          = "absheight",
 })
 minetest.register_node("xtraores:stone_with_unobtanium", {
-	description = "unobtanium ore",
+	description = "Unobtanium Ore",
 	tiles = {"default_stone.png^xtraores_mineral_unobtanium.png"},
 	is_ground_content = true,
 	groups = {weryhard=0},
@@ -626,18 +626,18 @@ minetest.register_node("xtraores:stone_with_unobtanium", {
 	sounds = default.node_sound_stone_defaults(),
 })
 minetest.register_node("xtraores:unobtanium_brick", {
-	description = "unobtanium bricks",
+	description = "Unobtanium Bricks",
 	tiles = {"xtraores_unobtanium_brick.png"},
 	is_ground_content = true,
 	groups = {weryhard=0},
 	sounds = default.node_sound_stone_defaults(),
 })
 minetest.register_craftitem("xtraores:unobtanium_lump", {
-	description = "unobtanium lump",
+	description = "Unobtanium Lump",
 	inventory_image = "xtraores_unobtanium_lump.png",
 })
 minetest.register_craftitem("xtraores:unobtanium_bar", {
-	description = "unobtanium bar",
+	description = "Unobtanium Bar",
 	inventory_image = "xtraores_unobtanium_bar.png",
 })
 minetest.register_craft({
@@ -653,7 +653,7 @@ minetest.register_craft({
 	}
 })
 minetest.register_tool("xtraores:drill_unobtanium", {
-	description = "unobtanium drill",
+	description = "Unobtanium Drill",
 	inventory_image = "xtraores_drill_unobtanium.png",
 	tool_capabilities = {
 		full_punch_interval = 0.001,
@@ -667,7 +667,7 @@ minetest.register_tool("xtraores:drill_unobtanium", {
 	},
 })
 minetest.register_tool("xtraores:axe_unobtanium", {
-	description = "unobtanium chainsaw",
+	description = "Unobtanium Chainsaw",
 	inventory_image = "xtraores_axe_unobtanium.png",
 	tool_capabilities = {
 		full_punch_interval = 0.001,
@@ -679,7 +679,7 @@ minetest.register_tool("xtraores:axe_unobtanium", {
 	},
 })
 minetest.register_tool("xtraores:sword_unobtanium", {
-	description = "unobtanium darkness",
+	description = "Unobtanium Darkness",
 	inventory_image = "xtraores_sword_unobtanium.png",
 	tool_capabilities = {
 		full_punch_interval = 0.6,
@@ -727,7 +727,7 @@ minetest.register_ore({
 })
 
 minetest.register_node("xtraores:stone_with_titanium", {
-	description = "titanium ore",
+	description = "Titanium Ore",
 	tiles = {"default_stone.png^xtraores_mineral_titanium.png"},
 	is_ground_content = true,
 	groups = {weryhard=0},
@@ -735,18 +735,18 @@ minetest.register_node("xtraores:stone_with_titanium", {
 	sounds = default.node_sound_stone_defaults(),
 })
 minetest.register_node("xtraores:titanium_brick", {
-	description = "titanium bricks",
+	description = "Titanium Bricks",
 	tiles = {"xtraores_titanium_brick.png"},
 	is_ground_content = true,
 	groups = {weryhard=0},
 	sounds = default.node_sound_stone_defaults(),
 })
 minetest.register_craftitem("xtraores:titanium_lump", {
-	description = "titanium lump",
+	description = "Titanium Lump",
 	inventory_image = "xtraores_titanium_lump.png",
 })
 minetest.register_craftitem("xtraores:titanium_bar", {
-	description = "titanium bar",
+	description = "Titanium Bar",
 	inventory_image = "xtraores_titanium_bar.png",
 })
 minetest.register_craft({
@@ -764,7 +764,7 @@ minetest.register_craft({
 })
 
 minetest.register_tool("xtraores:axe_titanium", {
-	description = "titanium chainsaw",
+	description = "Titanium Chainsaw",
 	inventory_image = "xtraores_axe_titanium.png",
 	tool_capabilities = {
 		full_punch_interval = 0.001,
@@ -776,7 +776,7 @@ minetest.register_tool("xtraores:axe_titanium", {
 	},
 })
 minetest.register_tool("xtraores:drill_titanium", {
-	description = "titanium drill",
+	description = "Titanium Drill",
 	inventory_image = "xtraores_drill_titanium.png",
 	tool_capabilities = {
 		full_punch_interval = 0.001,
@@ -790,7 +790,7 @@ minetest.register_tool("xtraores:drill_titanium", {
 	},
 })
 minetest.register_tool("xtraores:sword_titanium", {
-	description = "titanium destructonator",
+	description = "Titanium Destructonator",
 	inventory_image = "xtraores_sword_titanium.png",
 	tool_capabilities = {
 		full_punch_interval = 0.6,
@@ -838,7 +838,7 @@ minetest.register_ore({
 })
 
 minetest.register_node("xtraores:geminitinum_brick", {
-	description = "crystal bricks",
+	description = "Crystal Bricks",
 	tiles = {{
 		name="xtraores_geminitinum_brick.png",
 		animation={type="vertical_frames", aspect_w=16, aspect_h=16, length=1},
@@ -849,7 +849,7 @@ minetest.register_node("xtraores:geminitinum_brick", {
 	sounds = default.node_sound_stone_defaults(),
 })
 minetest.register_node("xtraores:stone_with_geminitinum", {
-	description = "geminitinum ore",
+	description = "Geminitinum Ore",
 	tiles = {"default_stone.png^xtraores_mineral_geminitinum.png"},
 	is_ground_content = true,
 	groups = {weryhard=0},
@@ -857,11 +857,11 @@ minetest.register_node("xtraores:stone_with_geminitinum", {
 	sounds = default.node_sound_stone_defaults(),
 })
 minetest.register_craftitem("xtraores:geminitinum_lump", {
-	description = "geminitinum crystals(you'll have to smelt those before using, and they'll take a lot of time to smelt)",
+	description = "Geminitinum Crystals",
 	inventory_image = "xtraores_geminitinum_lump.png",
 })
 minetest.register_craftitem("xtraores:geminitinum_bar", {
-	description = "geminitinum bar",
+	description = "Geminitinum Bar",
 	inventory_image = "xtraores_geminitinum_bar.png",
 })
 minetest.register_craft({
@@ -879,7 +879,7 @@ minetest.register_craft({
 })
 
 minetest.register_tool("xtraores:axe_geminitinum", {
-	description = "geminitinum chainsaw",
+	description = "Geminitinum Chainsaw",
 	inventory_image = "xtraores_axe_geminitinum.png",
 	tool_capabilities = {
 		full_punch_interval = 0.001,
@@ -891,7 +891,7 @@ minetest.register_tool("xtraores:axe_geminitinum", {
 	},
 })
 minetest.register_tool("xtraores:drill_geminitinum", {
-	description = "geminitinum drill",
+	description = "Geminitinum Drill",
 	inventory_image = "xtraores_drill_geminitinum.png",
 	tool_capabilities = {
 		full_punch_interval = 0.001,
@@ -905,7 +905,7 @@ minetest.register_tool("xtraores:drill_geminitinum", {
 	},
 })
 minetest.register_tool("xtraores:sword_geminitinum", {
-	description = "nyanmere",
+	description = "Nyanmere",
 	inventory_image = "xtraores_sword_geminitinum.png",
 	tool_capabilities = {
 		full_punch_interval = 0.5,
@@ -953,7 +953,7 @@ minetest.register_ore({
 })
 
 minetest.register_node("xtraores:geminitinum_brick", {
-	description = "crystal bricks",
+	description = "Crystal Bricks",
 	tiles = {{
 		name="xtraores_geminitinum_brick.png",
 		animation={type="vertical_frames", aspect_w=16, aspect_h=16, length=1},
@@ -972,7 +972,7 @@ minetest.register_craft({
 	}
 })
 minetest.register_tool("xtraores:sword_excalibur", {
-	description = "excalibur(HAS 75 DAMAGE THAT IS SO OP!!! so as its recipe...) ",
+	description = "Excalibur | 75 dmg",
 	inventory_image = "xtraores_sword_excalibur.png",
 	tool_capabilities = {
 		full_punch_interval = 0.1,
@@ -992,7 +992,7 @@ minetest.register_craft({
 	}
 })
 minetest.register_node("xtraores:rainbow", {
-	description = "rainbow block",
+	description = "Rainbow Block",
 	tiles = {"xtraores_rainbow_block.png"},
 	light_source = default.LIGHT_MAX - 1,
 	is_ground_content = true,
@@ -1008,7 +1008,7 @@ minetest.register_craft({
 	}
 })
 minetest.register_tool("xtraores:spear_platinum", {
-	description = "platinum spear",
+	description = "Platinum Spear",
 	inventory_image = "xtraores_spear_platinum.png",
 	range = 12,
 	tool_capabilities = {
@@ -1029,7 +1029,7 @@ minetest.register_craft({
 	}
 })
 minetest.register_tool("xtraores:spear_cobalt", {
-	description = "cobalt spear",
+	description = "Cobalt Spear",
 	inventory_image = "xtraores_spear_cobalt.png",
 	range = 12,
 	tool_capabilities = {
@@ -1071,7 +1071,7 @@ minetest.register_craft({
 	}
 })
 minetest.register_tool("xtraores:spear_adamantite", {
-	description = "adamantite spear",
+	description = "Adamantite Spear",
 	inventory_image = "xtraores_spear_adamantite.png",
 	range = 12,
 	tool_capabilities = {
@@ -1093,7 +1093,7 @@ minetest.register_craft({
 })
 
 minetest.register_tool("xtraores:spear_rarium", {
-	description = "rarium spear",
+	description = "Rarium Spear",
 	inventory_image = "xtraores_spear_rarium.png",
 	range = 12,
 	tool_capabilities = {
@@ -1114,7 +1114,7 @@ minetest.register_craft({
 	}
 })
 minetest.register_tool("xtraores:spear_unobtanium", {
-	description = "unobtanium spear",
+	description = "Unobtanium Spear",
 	inventory_image = "xtraores_spear_unobtanium.png",
 	range = 12,
 	tool_capabilities = {
@@ -1135,7 +1135,7 @@ minetest.register_craft({
 	}
 })
 minetest.register_tool("xtraores:spear_titanium", {
-	description = "titanium spear",
+	description = "Titanium Spear",
 	inventory_image = "xtraores_spear_titanium.png",
 	range = 12,
 	tool_capabilities = {
@@ -1156,7 +1156,7 @@ minetest.register_craft({
 	}
 })
 minetest.register_tool("xtraores:spear_geminitinum", {
-	description = "geminitinum spear",
+	description = "Geminitinum Spear",
 	inventory_image = "xtraores_spear_geminitinum.png",
 	range = 12,
 	tool_capabilities = {
@@ -1178,7 +1178,7 @@ minetest.register_craft({
 })
 
 minetest.register_craftitem("xtraores:titanium_bullet", {
-	description = "titanium bullet (ammo for titanium gun!)",
+	description = "Titanium bullet | Ammo for titanium gun",
 	inventory_image = "xtraores_titanium_bullet.png",
 })
 
@@ -1192,7 +1192,7 @@ minetest.register_craft({
 })
 
 minetest.register_tool("xtraores:titanium_gun", {
-	description = "titanium gun (needs titanium bullets to shoot|deals 45 dmg)",
+	description = "Titanium Gun | 45 dmg (requires titanium bullets)",
 	inventory_image = "xtraores_titanium_gun.png",
 	on_use = function(itemstack, user, pointed_thing)
 		local inv = user:get_inventory()
@@ -1280,23 +1280,23 @@ minetest.register_entity("xtraores:tb", XTRAORES_TB )
 
 
 minetest.register_craftitem("xtraores:titanium_barrel", {
-	description = "titanium barrel (titanium gun part!)",
+	description = "Titanium Barrel (titanium gun part)",
 	inventory_image = "xtraores_titanium_barrel.png",
 })
 minetest.register_craftitem("xtraores:titanium_top", {
-	description = "titanium gun top (titanium gun part!)",
+	description = "Titanium Gun Top (titanium gun part)",
 	inventory_image = "xtraores_titanium_top.png",
 })
 minetest.register_craftitem("xtraores:titanium_bottom", {
-	description = "titanium gun bottom (titanium gun part!)",
+	description = "Titanium Gun Bottom (titanium gun part)",
 	inventory_image = "xtraores_titanium_bottom.png",
 })
 minetest.register_craftitem("xtraores:titanium_handle", {
-	description = "titanium handle (titanium gun part!)",
+	description = "Titanium Handle (titanium gun part)",
 	inventory_image = "xtraores_titanium_handle.png",
 })
 minetest.register_craftitem("xtraores:titanium_mechanism", {
-	description = "titanium gun mechanism (titanium gun part!)",
+	description = "Titanium Gun Mechanism (titanium gun part)",
 	inventory_image = "xtraores_titanium_mechanism.png",
 })
 minetest.register_craft({
@@ -1348,7 +1348,7 @@ minetest.register_craft({
 })
 
 minetest.register_tool("xtraores:precious_gun", {
-	description = "precious gun (needs titanium bullets to shoot|deals 75 dmg)",
+	description = "Precious Gun | 75 dmg (requries titanium bullets)",
 	inventory_image = "xtraores_precious_gun.png",
 	on_use = function(itemstack, user, pointed_thing)
 		local inv = user:get_inventory()
@@ -1366,7 +1366,7 @@ minetest.register_tool("xtraores:precious_gun", {
 			pos.y = pos.y + 1.6
 			local obj = minetest.add_entity(pos, "xtraores:ptb")
 			if obj then
-				minetest.sound_play("shot", {object=obj})
+				minetest.sound_play("shot_heavy", {object=obj})
 				obj:setvelocity({x=dir.x * 60, y=dir.y * 60, z=dir.z * 60})
 				obj:setacceleration({x=dir.x * 0, y=0, z=dir.z * 0})
 				obj:setyaw(yaw + math.pi)
@@ -1443,7 +1443,7 @@ minetest.register_craft({
 	}
 })
 minetest.register_craftitem("xtraores:chunai", {
-	description = "titanium chunai|deals 60 dmg)",
+	description = "Titanium Chunai | 60 dmg",
 	range = 0,
 	inventory_image = "xtraores_chunai.png",
 	on_use = function(itemstack, user, pointed_thing)
@@ -1540,13 +1540,13 @@ minetest.register_craft({
 })
 
 minetest.register_craftitem("xtraores:375", {
-	description = "375. (ammo for desert eagle!)",
+	description = "375. Bullets",
 	stack_max = 500,
 	inventory_image = "xtraores_375.png",
 })
 
 minetest.register_tool("xtraores:deagle", {
-	description = "desert eagle (needs 375. to shoot|deals 25 dmg)",
+	description = "Desert Eagle | 25 dmg (requires 375. bullets)",
 	inventory_image = "xtraores_deagle.png",
 	on_use = function(itemstack, user, pointed_thing)
 		local inv = user:get_inventory()
@@ -1583,7 +1583,7 @@ local XTRAORES_DB = {
 	timer = 0,
 	visual = "sprite",
 	visual_size = {x=0.075, y=0.075,},
-	textures = {'xtraores_old_shot.png'},
+	textures = {'xtraores_brass_shot.png'},
 	lastpos= {},
 	collisionbox = {0, 0, 0, 0, 0, 0},
 }
@@ -1675,21 +1675,21 @@ minetest.register_craft({
 	}
 })
 minetest.register_node("xtraores:redmarble_polished", {
-	description = "polished red marble",
+	description = "Polished Red Marble",
 	tiles = {"xtraores_redmarble_polished.png"},
 	is_ground_content = true,
 	groups = {cracky=3},
 	sounds = default.node_sound_stone_defaults(),
 })
 minetest.register_node("xtraores:redmarble_bricks", {
-	description = "red marble bricks",
+	description = "Red Marble Bricks",
 	tiles = {"xtraores_redmarble_bricks.png"},
 	is_ground_content = true,
 	groups = {cracky=3},
 	sounds = default.node_sound_stone_defaults(),
 })
 minetest.register_node("xtraores:redmarble", {
-	description = "red marble",
+	description = "Red Marble",
 	tiles = {"xtraores_redmarble.png"},
 	is_ground_content = true,
 	groups = {cracky=3},
@@ -1721,21 +1721,21 @@ minetest.register_craft({
 	}
 })
 minetest.register_node("xtraores:bluemarble_polished", {
-	description = "polished blue marble",
+	description = "Polished Blue Marble",
 	tiles = {"xtraores_bluemarble_polished.png"},
 	is_ground_content = true,
 	groups = {cracky=3},
 	sounds = default.node_sound_stone_defaults(),
 })
 minetest.register_node("xtraores:bluemarble_bricks", {
-	description = "blue marble bricks",
+	description = "Blue Marble Bricks",
 	tiles = {"xtraores_bluemarble_bricks.png"},
 	is_ground_content = true,
 	groups = {cracky=3},
 	sounds = default.node_sound_stone_defaults(),
 })
 minetest.register_node("xtraores:bluemarble", {
-	description = "blue marble",
+	description = "Blue Marble",
 	tiles = {"xtraores_bluemarble.png"},
 	is_ground_content = true,
 	groups = {cracky=3},
@@ -1767,21 +1767,21 @@ minetest.register_craft({
 	}
 })
 minetest.register_node("xtraores:blackmarble_polished", {
-	description = "polished black marble",
+	description = "Polished Black Marble",
 	tiles = {"xtraores_blackmarble_polished.png"},
 	is_ground_content = true,
 	groups = {cracky=3},
 	sounds = default.node_sound_stone_defaults(),
 })
 minetest.register_node("xtraores:blackmarble_bricks", {
-	description = "black marble bricks",
+	description = "Black Marble Bricks",
 	tiles = {"xtraores_blackmarble_bricks.png"},
 	is_ground_content = true,
 	groups = {cracky=3},
 	sounds = default.node_sound_stone_defaults(),
 })
 minetest.register_node("xtraores:blackmarble", {
-	description = "black marble",
+	description = "Black Marble",
 	tiles = {"xtraores_blackmarble.png"},
 	is_ground_content = true,
 	groups = {cracky=3},
@@ -1813,21 +1813,21 @@ minetest.register_craft({
 	}
 })
 minetest.register_node("xtraores:marble_polished", {
-	description = "polished white marble",
+	description = "Polished White Marble",
 	tiles = {"xtraores_marble_polished.png"},
 	is_ground_content = true,
 	groups = {cracky=3},
 	sounds = default.node_sound_stone_defaults(),
 })
 minetest.register_node("xtraores:marble_bricks", {
-	description = "white marble bricks",
+	description = "White Marble Bricks",
 	tiles = {"xtraores_marble_bricks.png"},
 	is_ground_content = true,
 	groups = {cracky=3},
 	sounds = default.node_sound_stone_defaults(),
 })
 minetest.register_node("xtraores:marble", {
-	description = "white marble",
+	description = "White Marble",
 	tiles = {"xtraores_marble.png"},
 	is_ground_content = true,
 	groups = {cracky=3},
@@ -1835,7 +1835,7 @@ minetest.register_node("xtraores:marble", {
 })
 
 minetest.register_tool("xtraores:spear_gungir", {
-	description = "THE GUNGIR(screw excalibur! this thingie does 160 dmg!)",
+	description = "The Gungir (spear) | 160 dmg",
 	inventory_image = "xtraores_spear_gungir.png",
 	range = 12,
 	tool_capabilities = {
