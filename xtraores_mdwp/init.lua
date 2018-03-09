@@ -24,7 +24,7 @@ minetest.register_tool("xtraores_mdwp:laser_riffle", {
 			pos.y = pos.y + 1.6
 			local obj = minetest.add_entity(pos, "xtraores_mdwp:lb")
 			if obj then
-				minetest.sound_play("shot", {object=obj})
+				minetest.sound_play("shot2", {object=obj})
 				obj:setvelocity({x=dir.x * 50, y=dir.y * 50, z=dir.z * 50})
 				obj:setacceleration({x=dir.x * 0, y=0, z=dir.z * 0})
 				obj:setyaw(yaw + math.pi)
@@ -41,8 +41,7 @@ minetest.register_tool("xtraores_mdwp:laser_riffle", {
 local XTRAORES_MDWP_LB = {
 	physical = false,
 	timer = 0,
-	visual = "mesh",
-	mesh = "xolazer.x",
+	visual = "sprite",
 	visual_size = {x=0.9, y=0.9,},
 	textures = {'xolaser.png'},
 	lastpos= {},
@@ -130,10 +129,10 @@ minetest.register_tool("xtraores_mdwp:rainbowgun", {
 		local yaw = user:get_look_yaw()
 		if pos and dir and yaw then
 			pos.y = pos.y + 1.6
-			local obj = minetest.add_entity(pos, "xtraores_mdwp:rb")
+			local obj = minetest.add_entity(pos, "xtraores_mdwp:lb")
 			if obj then
-				minetest.sound_play("shot", {object=obj})
-				obj:setvelocity({x=dir.x * 25, y=dir.y * 25, z=dir.z * 25})
+				minetest.sound_play("shot2", {object=obj})
+				obj:setvelocity({x=dir.x * 50, y=dir.y * 50, z=dir.z * 50})
 				obj:setacceleration({x=dir.x * 0, y=0, z=dir.z * 0})
 				obj:setyaw(yaw + math.pi)
 				local ent = obj:get_luaentity()
@@ -149,8 +148,7 @@ minetest.register_tool("xtraores_mdwp:rainbowgun", {
 local XTRAORES_MDWP_RB = {
 	physical = false,
 	timer = 0,
-	visual = "mesh",
-	mesh = "rainbow.x",
+	visual = "sprite",
 	visual_size = {x=0.9, y=0.9,},
 	textures = {'xtraores_rainbow.png'},
 	lastpos= {},

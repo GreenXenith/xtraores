@@ -1834,24 +1834,6 @@ minetest.register_node("xtraores:marble", {
 	sounds = default.node_sound_stone_defaults(),
 })
 
-minetest.register_craft({
-	type = "fuel",
-	recipe = "xtraores:antracite_lump",
-	burntime = 200,
-})
-minetest.register_craftitem("xtraores:antracite_lump", {
-	description = "antracite lump",
-	inventory_image = "xtraores_antracite_lump.png",
-})
-minetest.register_node("xtraores:stone_with_antracite", {
-	description = "antracite ore",
-	tiles = {"default_stone.png^xtraores_mineral_antracite.png"},
-	is_ground_content = true,
-	groups = {cracky=3},
-	drop = 'xtraores:antracite_lump',
-	sounds = default.node_sound_stone_defaults(),
-})
-
 minetest.register_tool("xtraores:spear_gungir", {
 	description = "THE GUNGIR(screw excalibur! this thingie does 160 dmg!)",
 	inventory_image = "xtraores_spear_gungir.png",
