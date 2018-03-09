@@ -1,10 +1,3 @@
-	minetest.register_tool("xtraores_armor:helmet_crown", {
-		description = "crown",
-		inventory_image = "xtraores_armor_inv_helmet_crown.png",
-		groups = {armor_head=25, armor_heal=25, armor_use=0},
-		wear = 0,
-	})
-
 	minetest.register_tool("xtraores_armor:helmet_platinum", {
 		description = "platinum Helmet",
 		inventory_image = "xtraores_armor_inv_helmet_platinum.png",

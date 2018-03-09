@@ -104,30 +104,3 @@ minetest.register_node("xtraores_mblox:marble_column", {
 	groups = {cracky=3},
 	sounds = default.node_sound_stone_defaults(),
 })
-
-minetest.register_node("xtraores_mblox:platinumtorch", {
-	description = "well stacked platinum torch",
-	walkable = false,
-	drawtype = "nodebox",
-			node_box = {
-				type = "fixed",
-				fixed = {       
-{ -0.0625, -0.50, -0.0625, 0.0625, 0.25, 0.0625, },			
-				},
-			},
-	tiles = {"xpt_top.png", "xpt_top.png",
-		"xpt_side.png", "xpt_side.png",
-		"xpt_side.png", "xpt_side.png"},
-	light_source = default.LIGHT_MAX - 0,
-	stack_max = 10000,
-	is_ground_content = true,
-	groups = {cracky=3},
-	sounds = default.node_sound_stone_defaults(),
-})
-minetest.register_craft({
-	output = 'xtraores_mblox:platinumtorch 15',
-	recipe = {
-		{'xtraores:antracite_lump'},
-		{'xtraores:platinum_bar'},
-	}
-})
