@@ -58,33 +58,33 @@
 		groups = {armor_shield=15, armor_heal=12, physics_speed=0.15, armor_use=75},
 		wear = 0,
 	})
-	minetest.register_tool("xtraores_armor:helmet_osminum", {
-		description = "osminum Helmet",
-		inventory_image = "xtraores_armor_inv_helmet_osminum.png",
+	minetest.register_tool("xtraores_armor:helmet_osmium", {
+		description = "Osmium Helmet",
+		inventory_image = "xtraores_armor_inv_helmet_osmium.png",
 		groups = {armor_head=15.4, armor_heal=12, physics_jump=0.15, armor_use=50},
 		wear = 0,
 	})
-	minetest.register_tool("xtraores_armor:chestplate_osminum", {
-		description = "osminum Chestplate",
-		inventory_image = "xtraores_armor_inv_chestplate_osminum.png",
+	minetest.register_tool("xtraores_armor:chestplate_osmium", {
+		description = "Osmium Chestplate",
+		inventory_image = "xtraores_armor_inv_chestplate_osmium.png",
 		groups = {armor_torso=20.4, armor_heal=12, physics_jump=0.15, armor_use=50},
 		wear = 0,
 	})
-	minetest.register_tool("xtraores_armor:leggings_osminum", {
-		description = "osminum Leggings",
-		inventory_image = "xtraores_armor_inv_leggings_osminum.png",
+	minetest.register_tool("xtraores_armor:leggings_osmium", {
+		description = "Osmium Leggings",
+		inventory_image = "xtraores_armor_inv_leggings_osmium.png",
 		groups = {armor_legs=20.4, armor_heal=12, physics_jump=0.15, armor_use=50},
 		wear = 0,
 	})
-	minetest.register_tool("xtraores_armor:boots_osminum", {
-		description = "osminum Boots",
-		inventory_image = "xtraores_armor_inv_boots_osminum.png",
+	minetest.register_tool("xtraores_armor:boots_osmium", {
+		description = "Osmium Boots",
+		inventory_image = "xtraores_armor_inv_boots_osmium.png",
 		groups = {armor_feet=15.4, armor_heal=12, physics_jump=0.15, armor_use=50},
 		wear = 0,
 	})
-	minetest.register_tool("xtraores_armor:shield_osminum", {
-		description = "osminum Shield",
-		inventory_image = "xtraores_armor_inv_shield_osminum.png",
+	minetest.register_tool("xtraores_armor:shield_osmium", {
+		description = "Osmium Shield",
+		inventory_image = "xtraores_armor_inv_shield_osmium.png",
 		groups = {armor_shield=15.4, armor_heal=12, physics_jump=0.15, armor_use=50},
 		wear = 0,
 	})
@@ -217,7 +217,7 @@
 local craft_ingreds = {
 	platinum = "xtraores:platinum_bar",
 	cobalt = "xtraores:cobalt_bar",
-	osminum = "xtraores:osminum_bar",
+	osmium = "xtraores:osmium_bar",
 	adamantite = "xtraores:adamantite_bar",
 	rarium = "xtraores:rarium_bar",
 	unobtanium = "xtraores:unobtanium_bar",

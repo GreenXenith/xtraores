@@ -76,8 +76,7 @@ stairs.register_stair_and_slab("blackmarble_polished", "xtraores:blackmarble_pol
 		{"xtraores_blackmarble_polished.png"},
 		"Polished Black Marble Stair",
 		"Polished Black Marble Slab",
-		
-default.node_sound_stone_defaults())
+		default.node_sound_stone_defaults())
 
 stairs.register_stair_and_slab("blackmarble_bricks", "xtraores:blackmarble_bricks",
 		{cracky = 3},

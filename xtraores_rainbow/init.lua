@@ -18,6 +18,7 @@ minetest.register_node("xtraores_rainbow:glass", {
 	groups = {cracky=3,oddly_breakable_by_hand=3},
 	sounds = default.node_sound_glass_defaults(),
 })
+
 minetest.register_node("xtraores_rainbow:wood", {
 	description = "Rainbow Planks",
 	tiles = {"xtraores_wood.png"},
@@ -26,6 +27,7 @@ minetest.register_node("xtraores_rainbow:wood", {
 	groups = {choppy=3, oddly_breakable_by_hand=2},
 	sounds = default.node_sound_wood_defaults(),
 })
+
 minetest.register_craft({
 	output = 'xtraores_rainbow:wood 3',
 	recipe = {

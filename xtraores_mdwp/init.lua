@@ -47,6 +47,7 @@ local XTRAORES_MDWP_LB = {
 	lastpos= {},
 	collisionbox = {0, 0, 0, 0, 0, 0},
 }
+
 XTRAORES_MDWP_LB.on_step = function(self, dtime)
 	self.timer = self.timer + dtime
 	local pos = self.object:getpos()
@@ -90,8 +91,6 @@ XTRAORES_MDWP_LB.on_step = function(self, dtime)
 end
 
 minetest.register_entity("xtraores_mdwp:lb", XTRAORES_MDWP_LB )
-
-
 
 minetest.register_craft({
 	output = 'xtraores_mdwp:laser_riffle',
@@ -154,6 +153,7 @@ local XTRAORES_MDWP_RB = {
 	lastpos= {},
 	collisionbox = {0, 0, 0, 0, 0, 0},
 }
+
 XTRAORES_MDWP_RB.on_step = function(self, dtime)
 	self.timer = self.timer + dtime
 	local pos = self.object:getpos()

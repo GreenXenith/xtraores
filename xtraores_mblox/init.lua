@@ -5,6 +5,7 @@ minetest.register_craft({
 		{'xtraores:redmarble'},
 	}
 })
+
 minetest.register_node("xtraores_mblox:redmarble_column", {
 	description = "Red Marble Column",
 	drawtype = "nodebox",

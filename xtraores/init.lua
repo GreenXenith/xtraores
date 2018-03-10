@@ -6,6 +6,7 @@ minetest.register_node("xtraores:stone_with_platinum", {
 	drop = 'xtraores:platinum_lump',
 	sounds = default.node_sound_stone_defaults(),
 })
+
 minetest.register_node("xtraores:platinum_brick", {
 	description = "Platinum Bricks",
 	tiles = {"xtraores_platinum_brick.png"},
@@ -13,19 +14,23 @@ minetest.register_node("xtraores:platinum_brick", {
 	groups = {cracky=2},
 	sounds = default.node_sound_stone_defaults(),
 })
+
 minetest.register_craftitem("xtraores:platinum_lump", {
 	description = "Platinum Lump",
 	inventory_image = "xtraores_platinum_lump.png",
 })
+
 minetest.register_craftitem("xtraores:platinum_bar", {
 	description = "Blatinum Bar",
 	inventory_image = "xtraores_platinum_bar.png",
 })
+
 minetest.register_craft({
 	type = "cooking",
 	output = "xtraores:platinum_bar",
 	recipe = "xtraores:platinum_lump",
 })
+
 minetest.register_craft({
 	output = 'xtraores:platinum_brick',
 	recipe = {
@@ -33,6 +38,7 @@ minetest.register_craft({
 		{'default:cobble'},
 	}
 })
+
 minetest.register_tool("xtraores:pick_platinum", {
 	description = "Platinum Pickaxe",
 	inventory_image = "xtraores_pick_platinum.png",
@@ -45,6 +51,7 @@ minetest.register_tool("xtraores:pick_platinum", {
 		damage_groups = {fleshy=5},
 	},
 })
+
 minetest.register_tool("xtraores:shovel_platinum", {
 	description = "Platinum Shovel",
 	inventory_image = "xtraores_shovel_platinum.png",
@@ -58,6 +65,7 @@ minetest.register_tool("xtraores:shovel_platinum", {
 		damage_groups = {fleshy=4},
 	},
 })
+
 minetest.register_tool("xtraores:axe_platinum", {
 	description = "Platinum Axe",
 	inventory_image = "xtraores_axe_platinum.png",
@@ -70,6 +78,7 @@ minetest.register_tool("xtraores:axe_platinum", {
 		damage_groups = {fleshy=6},
 	},
 })
+
 minetest.register_tool("xtraores:sword_platinum", {
 	description = "Platinum Sword",
 	inventory_image = "xtraores_sword_platinum.png",
@@ -82,6 +91,7 @@ minetest.register_tool("xtraores:sword_platinum", {
 		damage_groups = {fleshy=7},
 	}
 })
+
 minetest.register_craft({
 	output = 'xtraores:pick_platinum',
 	recipe = {
@@ -90,6 +100,7 @@ minetest.register_craft({
 		{'', 'group:stick', ''},
 	}
 })
+
 minetest.register_craft({
 	output = 'xtraores:shovel_platinum',
 	recipe = {
@@ -98,6 +109,7 @@ minetest.register_craft({
 		{'group:stick'},
 	}
 })
+
 minetest.register_craft({
 	output = 'xtraores:axe_platinum',
 	recipe = {
@@ -106,6 +118,7 @@ minetest.register_craft({
 		{'', 'group:stick'},
 	}
 })
+
 minetest.register_craft({
 	output = 'xtraores:sword_platinum',
 	recipe = {
@@ -114,6 +127,7 @@ minetest.register_craft({
 		{'group:stick'},
 	}
 })
+
 minetest.register_ore({
 	ore_type       = "scatter",
 	ore            = "xtraores:stone_with_platinum",
@@ -125,6 +139,7 @@ minetest.register_ore({
 	height_max     = -100,
 	flags          = "absheight",
 })
+
 minetest.register_node("xtraores:stone_with_cobalt", {
 	description = "Cobalt Ore",
 	tiles = {"default_stone.png^xtraores_mineral_cobalt.png"},
@@ -133,6 +148,7 @@ minetest.register_node("xtraores:stone_with_cobalt", {
 	drop = 'xtraores:cobalt_lump',
 	sounds = default.node_sound_stone_defaults(),
 })
+
 minetest.register_node("xtraores:cobalt_brick", {
 	description = "Cobalt Bricks",
 	tiles = {"xtraores_cobalt_brick.png"},
@@ -140,19 +156,23 @@ minetest.register_node("xtraores:cobalt_brick", {
 	groups = {cracky=1},
 	sounds = default.node_sound_stone_defaults(),
 })
+
 minetest.register_craftitem("xtraores:cobalt_lump", {
 	description = "Cobalt Lump",
 	inventory_image = "xtraores_cobalt_lump.png",
 })
+
 minetest.register_craftitem("xtraores:cobalt_bar", {
 	description = "Cobalt Bar",
 	inventory_image = "xtraores_cobalt_bar.png",
 })
+
 minetest.register_craft({
 	type = "cooking",
 	output = "xtraores:cobalt_bar",
 	recipe = "xtraores:cobalt_lump",
 })
+
 minetest.register_craft({
 	output = 'xtraores:cobalt_brick',
 	recipe = {
@@ -160,6 +180,7 @@ minetest.register_craft({
 		{'default:cobble'},
 	}
 })
+
 minetest.register_tool("xtraores:pick_cobalt", {
 	description = "Cobalt Warpick",
 	inventory_image = "xtraores_pick_cobalt.png",
@@ -173,6 +194,7 @@ minetest.register_tool("xtraores:pick_cobalt", {
 		damage_groups = {fleshy=8},
 	},
 })
+
 minetest.register_tool("xtraores:shovel_cobalt", {
 	description = "Cobalt Shovel",
 	inventory_image = "xtraores_shovel_cobalt.png",
@@ -186,6 +208,7 @@ minetest.register_tool("xtraores:shovel_cobalt", {
 		damage_groups = {fleshy=7},
 	},
 })
+
 minetest.register_tool("xtraores:axe_cobalt", {
 	description = "Cobalt Wraxe",
 	inventory_image = "xtraores_axe_cobalt.png",
@@ -198,6 +221,7 @@ minetest.register_tool("xtraores:axe_cobalt", {
 		damage_groups = {fleshy=9},
 	},
 })
+
 minetest.register_tool("xtraores:sword_cobalt", {
 	description = "Cobalt Cutlas",
 	inventory_image = "xtraores_sword_cobalt.png",
@@ -210,6 +234,7 @@ minetest.register_tool("xtraores:sword_cobalt", {
 		damage_groups = {fleshy=10},
 	}
 })
+
 minetest.register_craft({
 	output = 'xtraores:pick_cobalt',
 	recipe = {
@@ -218,6 +243,7 @@ minetest.register_craft({
 		{'', 'group:stick', ''},
 	}
 })
+
 minetest.register_craft({
 	output = 'xtraores:shovel_cobalt',
 	recipe = {
@@ -226,6 +252,7 @@ minetest.register_craft({
 		{'group:stick'},
 	}
 })
+
 minetest.register_craft({
 	output = 'xtraores:axe_cobalt',
 	recipe = {
@@ -234,6 +261,7 @@ minetest.register_craft({
 		{'', 'group:stick'},
 	}
 })
+
 minetest.register_craft({
 	output = 'xtraores:sword_cobalt',
 	recipe = {
@@ -242,6 +270,7 @@ minetest.register_craft({
 		{'group:stick'},
 	}
 })
+
 minetest.register_ore({
 	ore_type       = "scatter",
 	ore            = "xtraores:stone_with_cobalt",
@@ -253,44 +282,51 @@ minetest.register_ore({
 	height_max     = -650,
 	flags          = "absheight",
 })
-minetest.register_node("xtraores:stone_with_osminum", {
-	description = "osminum ore",
-	tiles = {"default_stone.png^xtraores_mineral_osminum.png"},
+
+minetest.register_node("xtraores:stone_with_osmium", {
+	description = "Osmium Ore",
+	tiles = {"default_stone.png^xtraores_mineral_osmium.png"},
 	is_ground_content = true,
 	groups = {weryhard=3},
-	drop = 'xtraores:osminum_lump',
+	drop = 'xtraores:osmium_lump',
 	sounds = default.node_sound_stone_defaults(),
 })
-minetest.register_node("xtraores:osminum_brick", {
-	description = "osminum bricks",
-	tiles = {"xtraores_osminum_brick.png"},
+
+minetest.register_node("xtraores:osmium_brick", {
+	description = "Osmium Bricks",
+	tiles = {"xtraores_osmium_brick.png"},
 	is_ground_content = true,
 	groups = {weryhard=3},
 	sounds = default.node_sound_stone_defaults(),
 })
-minetest.register_craftitem("xtraores:osminum_lump", {
-	description = "osminum lump",
-	inventory_image = "xtraores_osminum_lump.png",
+
+minetest.register_craftitem("xtraores:osmium_lump", {
+	description = "Osmium Lump",
+	inventory_image = "xtraores_osmium_lump.png",
 })
-minetest.register_craftitem("xtraores:osminum_bar", {
-	description = "osminum bar",
-	inventory_image = "xtraores_osminum_bar.png",
+
+minetest.register_craftitem("xtraores:osmium_bar", {
+	description = "Osmium Bar",
+	inventory_image = "xtraores_osmium_bar.png",
 })
+
 minetest.register_craft({
 	type = "cooking",
-	output = "xtraores:osminum_bar",
-	recipe = "xtraores:osminum_lump",
+	output = "xtraores:osmium_bar",
+	recipe = "xtraores:osmium_lump",
 })
+
 minetest.register_craft({
-	output = 'xtraores:osminum_brick',
+	output = 'xtraores:osmium_brick',
 	recipe = {
-		{'xtraores:osminum_lump'},
+		{'xtraores:osmium_lump'},
 		{'default:cobble'},
 	}
 })
-minetest.register_tool("xtraores:pick_osminum", {
-	description = "osminum warpick",
-	inventory_image = "xtraores_pick_osminum.png",
+
+minetest.register_tool("xtraores:pick_osmium", {
+	description = "Osmium Warpick",
+	inventory_image = "xtraores_pick_osmium.png",
 	tool_capabilities = {
 		full_punch_interval = 0.9,
 		max_drop_level=3,
@@ -301,10 +337,11 @@ minetest.register_tool("xtraores:pick_osminum", {
 		damage_groups = {fleshy=13},
 	},
 })
-minetest.register_tool("xtraores:shovel_osminum", {
-	description = "osminum shovel",
-	inventory_image = "xtraores_shovel_osminum.png",
-	wield_image = "xtraores_shovel_osminum.png^[transformR90",
+
+minetest.register_tool("xtraores:shovel_osmium", {
+	description = "Osmium Shovel",
+	inventory_image = "xtraores_shovel_osmium.png",
+	wield_image = "xtraores_shovel_osmium.png^[transformR90",
 	tool_capabilities = {
 		full_punch_interval = 1.0,
 		max_drop_level=3,
@@ -314,9 +351,10 @@ minetest.register_tool("xtraores:shovel_osminum", {
 		damage_groups = {fleshy=12},
 	},
 })
-minetest.register_tool("xtraores:axe_osminum", {
-	description = "osminum greataxe",
-	inventory_image = "xtraores_axe_osminum.png",
+
+minetest.register_tool("xtraores:axe_osmium", {
+	description = "Osmium Greataxe",
+	inventory_image = "xtraores_axe_osmium.png",
 	tool_capabilities = {
 		full_punch_interval = 0.9,
 		max_drop_level=1,
@@ -326,9 +364,10 @@ minetest.register_tool("xtraores:axe_osminum", {
 		damage_groups = {fleshy=14},
 	},
 })
-minetest.register_tool("xtraores:sword_osminum", {
-	description = "osminum greatsword",
-	inventory_image = "xtraores_sword_osminum.png",
+
+minetest.register_tool("xtraores:sword_osmium", {
+	description = "Osmium Greatsword",
+	inventory_image = "xtraores_sword_osmium.png",
 	tool_capabilities = {
 		full_punch_interval = 0.7,
 		max_drop_level=1,
@@ -338,41 +377,46 @@ minetest.register_tool("xtraores:sword_osminum", {
 		damage_groups = {fleshy=15},
 	}
 })
+
 minetest.register_craft({
-	output = 'xtraores:pick_osminum',
+	output = 'xtraores:pick_osmium',
 	recipe = {
-		{'xtraores:osminum_bar', 'xtraores:osminum_bar', 'xtraores:osminum_bar'},
+		{'xtraores:osmium_bar', 'xtraores:osmium_bar', 'xtraores:osmium_bar'},
 		{'', 'group:stick', ''},
 		{'', 'group:stick', ''},
 	}
 })
+
 minetest.register_craft({
-	output = 'xtraores:shovel_osminum',
+	output = 'xtraores:shovel_osmium',
 	recipe = {
-		{'xtraores:osminum_bar'},
+		{'xtraores:osmium_bar'},
 		{'group:stick'},
 		{'group:stick'},
 	}
 })
+
 minetest.register_craft({
-	output = 'xtraores:axe_osminum',
+	output = 'xtraores:axe_osmium',
 	recipe = {
-		{'xtraores:osminum_bar', 'xtraores:osminum_bar'},
-		{'xtraores:osminum_bar', 'group:stick'},
+		{'xtraores:osmium_bar', 'xtraores:osmium_bar'},
+		{'xtraores:osmium_bar', 'group:stick'},
 		{'', 'group:stick'},
 	}
 })
+
 minetest.register_craft({
-	output = 'xtraores:sword_osminum',
+	output = 'xtraores:sword_osmium',
 	recipe = {
-		{'xtraores:osminum_bar'},
-		{'xtraores:osminum_bar'},
+		{'xtraores:osmium_bar'},
+		{'xtraores:osmium_bar'},
 		{'group:stick'},
 	}
 })
+
 minetest.register_ore({
 	ore_type       = "scatter",
-	ore            = "xtraores:stone_with_osminum",
+	ore            = "xtraores:stone_with_osmium",
 	wherein        = "default:stone",
 	clust_scarcity = 15*15*15,
 	clust_num_ores = 5,
@@ -381,6 +425,46 @@ minetest.register_ore({
 	height_max     = -1000,
 	flags          = "absheight",
 })
+
+local prefix = {
+	"stone_with",
+	"pick",
+	"shovel",
+	"axe",
+	"sword",
+	"spear",
+}
+
+local suffix = {
+	"brick",
+	"lump",
+	"bar",
+}
+
+local armor = {
+	"boots",
+	"leggings",
+	"chestplate",
+	"helmet",
+	"shield",
+}
+
+for _, name in pairs(prefix) do
+	minetest.register_alias("xtraores:"..name.."_osminum", "xtraores:"..name.."_osmium")
+end
+
+for _, name in pairs(suffix) do
+	minetest.register_alias("xtraores:".."osminum_"..name, "xtraores:".."osmium_"..name)
+end
+
+for _, name in pairs(armor) do
+	minetest.register_alias("xtraores_armor:"..name.."_osminum", "xtraores_armor:"..name.."_osmium")
+end
+
+--[[for _, name in pairs(prefix) do
+	minetest.register_alias("xtraores_armor:"..name.."_osmium", "xtraores_armor:"..name.."_osmium")
+end]]
+
 minetest.register_node("xtraores:stone_with_adamantite", {
 	description = "Adamantite Ore",
 	tiles = {"default_stone.png^xtraores_mineral_adamantite.png"},
@@ -389,6 +473,7 @@ minetest.register_node("xtraores:stone_with_adamantite", {
 	drop = 'xtraores:adamantite_lump',
 	sounds = default.node_sound_stone_defaults(),
 })
+
 minetest.register_node("xtraores:adamantite_brick", {
 	description = "Adamantite Bricks",
 	tiles = {"xtraores_adamantite_brick.png"},
@@ -396,19 +481,23 @@ minetest.register_node("xtraores:adamantite_brick", {
 	groups = {weryhard=3},
 	sounds = default.node_sound_stone_defaults(),
 })
+
 minetest.register_craftitem("xtraores:adamantite_lump", {
 	description = "Adamantite Lump",
 	inventory_image = "xtraores_adamantite_lump.png",
 })
+
 minetest.register_craftitem("xtraores:adamantite_bar", {
 	description = "Adamantite Bar",
 	inventory_image = "xtraores_adamantite_bar.png",
 })
+
 minetest.register_craft({
 	type = "cooking",
 	output = "xtraores:adamantite_bar",
 	recipe = "xtraores:adamantite_lump",
 })
+
 minetest.register_craft({
 	output = 'xtraores:adamantite_brick',
 	recipe = {
@@ -416,6 +505,7 @@ minetest.register_craft({
 		{'default:cobble'},
 	}
 })
+
 minetest.register_tool("xtraores:pick_adamantite", {
 	description = "Adamantite Breaker",
 	inventory_image = "xtraores_pick_adamantite.png",
@@ -429,6 +519,7 @@ minetest.register_tool("xtraores:pick_adamantite", {
 		damage_groups = {fleshy=18},
 	},
 })
+
 minetest.register_tool("xtraores:shovel_adamantite", {
 	description = "Adamantite Shovel",
 	inventory_image = "xtraores_shovel_adamantite.png",
@@ -442,6 +533,7 @@ minetest.register_tool("xtraores:shovel_adamantite", {
 		damage_groups = {fleshy=17},
 	},
 })
+
 minetest.register_tool("xtraores:axe_adamantite", {
 	description = "Adamantite Chainsaw",
 	inventory_image = "xtraores_axe_adamantite.png",
@@ -454,6 +546,7 @@ minetest.register_tool("xtraores:axe_adamantite", {
 		damage_groups = {fleshy=5},
 	},
 })
+
 minetest.register_tool("xtraores:sword_adamantite", {
 	description = "Adamantite Katana",
 	inventory_image = "xtraores_sword_adamantite.png",
@@ -466,6 +559,7 @@ minetest.register_tool("xtraores:sword_adamantite", {
 		damage_groups = {fleshy=20},
 	}
 })
+
 minetest.register_craft({
 	output = 'xtraores:pick_adamantite',
 	recipe = {
@@ -474,6 +568,7 @@ minetest.register_craft({
 		{'', 'group:stick', ''},
 	}
 })
+
 minetest.register_craft({
 	output = 'xtraores:shovel_adamantite',
 	recipe = {
@@ -482,6 +577,7 @@ minetest.register_craft({
 		{'group:stick'},
 	}
 })
+
 minetest.register_craft({
 	output = 'xtraores:axe_adamantite',
 	recipe = {
@@ -490,6 +586,7 @@ minetest.register_craft({
 		{'', 'xtraores:adamantite_bar'},
 	}
 })
+
 minetest.register_craft({
 	output = 'xtraores:sword_adamantite',
 	recipe = {
@@ -498,6 +595,7 @@ minetest.register_craft({
 		{'group:stick'},
 	}
 })
+
 minetest.register_ore({
 	ore_type       = "scatter",
 	ore            = "xtraores:stone_with_adamantite",
@@ -509,6 +607,7 @@ minetest.register_ore({
 	height_max     = -2000,
 	flags          = "absheight",
 })
+
 minetest.register_node("xtraores:stone_with_rarium", {
 	description = "Rarium Ore",
 	tiles = {"default_stone.png^xtraores_mineral_rarium.png"},
@@ -517,6 +616,7 @@ minetest.register_node("xtraores:stone_with_rarium", {
 	drop = 'xtraores:rarium_lump',
 	sounds = default.node_sound_stone_defaults(),
 })
+
 minetest.register_node("xtraores:rarium_brick", {
 	description = "Rarium Bricks",
 	tiles = {"xtraores_rarium_brick.png"},
@@ -524,19 +624,23 @@ minetest.register_node("xtraores:rarium_brick", {
 	groups = {weryhard=1},
 	sounds = default.node_sound_stone_defaults(),
 })
+
 minetest.register_craftitem("xtraores:rarium_lump", {
 	description = "Rarium Lump",
 	inventory_image = "xtraores_rarium_lump.png",
 })
+
 minetest.register_craftitem("xtraores:rarium_bar", {
 	description = "Rarium Bar",
 	inventory_image = "xtraores_rarium_bar.png",
 })
+
 minetest.register_craft({
 	type = "cooking",
 	output = "xtraores:rarium_bar",
 	recipe = "xtraores:rarium_lump",
 })
+
 minetest.register_craft({
 	output = 'xtraores:rarium_brick',
 	recipe = {
@@ -544,6 +648,7 @@ minetest.register_craft({
 		{'default:cobble'},
 	}
 })
+
 minetest.register_tool("xtraores:drill_rarium", {
 	description = "Rarium Drill",
 	inventory_image = "xtraores_drill_rarium.png",
@@ -558,6 +663,7 @@ minetest.register_tool("xtraores:drill_rarium", {
 		damage_groups = {fleshy=8},
 	},
 })
+
 minetest.register_tool("xtraores:axe_rarium", {
 	description = "Rarium Chainsaw",
 	inventory_image = "xtraores_axe_rarium.png",
@@ -570,6 +676,7 @@ minetest.register_tool("xtraores:axe_rarium", {
 		damage_groups = {fleshy=8},
 	},
 })
+
 minetest.register_tool("xtraores:sword_rarium", {
 	description = "Rarium Slicer",
 	inventory_image = "xtraores_sword_rarium.png",
@@ -582,6 +689,7 @@ minetest.register_tool("xtraores:sword_rarium", {
 		damage_groups = {fleshy=30},
 	}
 })
+
 minetest.register_craft({
 	output = 'xtraores:drill_rarium',
 	recipe = {
@@ -590,6 +698,7 @@ minetest.register_craft({
 		{'', 'default:diamond', ''},
 	}
 })
+
 minetest.register_craft({
 	output = 'xtraores:axe_rarium',
 	recipe = {
@@ -598,6 +707,7 @@ minetest.register_craft({
 		{'', 'xtraores:rarium_bar'},
 	}
 })
+
 minetest.register_craft({
 	output = 'xtraores:sword_rarium',
 	recipe = {
@@ -606,6 +716,7 @@ minetest.register_craft({
 		{'group:stick'},
 	}
 })
+
 minetest.register_ore({
 	ore_type       = "scatter",
 	ore            = "xtraores:stone_with_rarium",
@@ -617,6 +728,7 @@ minetest.register_ore({
 	height_max     = -5000,
 	flags          = "absheight",
 })
+
 minetest.register_node("xtraores:stone_with_unobtanium", {
 	description = "Unobtanium Ore",
 	tiles = {"default_stone.png^xtraores_mineral_unobtanium.png"},
@@ -625,6 +737,7 @@ minetest.register_node("xtraores:stone_with_unobtanium", {
 	drop = 'xtraores:unobtanium_lump',
 	sounds = default.node_sound_stone_defaults(),
 })
+
 minetest.register_node("xtraores:unobtanium_brick", {
 	description = "Unobtanium Bricks",
 	tiles = {"xtraores_unobtanium_brick.png"},
@@ -632,19 +745,23 @@ minetest.register_node("xtraores:unobtanium_brick", {
 	groups = {weryhard=0},
 	sounds = default.node_sound_stone_defaults(),
 })
+
 minetest.register_craftitem("xtraores:unobtanium_lump", {
 	description = "Unobtanium Lump",
 	inventory_image = "xtraores_unobtanium_lump.png",
 })
+
 minetest.register_craftitem("xtraores:unobtanium_bar", {
 	description = "Unobtanium Bar",
 	inventory_image = "xtraores_unobtanium_bar.png",
 })
+
 minetest.register_craft({
 	type = "cooking",
 	output = "xtraores:unobtanium_bar",
 	recipe = "xtraores:unobtanium_lump",
 })
+
 minetest.register_craft({
 	output = 'xtraores:unobtanium_brick',
 	recipe = {
@@ -652,6 +769,7 @@ minetest.register_craft({
 		{'default:cobble'},
 	}
 })
+
 minetest.register_tool("xtraores:drill_unobtanium", {
 	description = "Unobtanium Drill",
 	inventory_image = "xtraores_drill_unobtanium.png",
@@ -666,6 +784,7 @@ minetest.register_tool("xtraores:drill_unobtanium", {
 		damage_groups = {fleshy=12},
 	},
 })
+
 minetest.register_tool("xtraores:axe_unobtanium", {
 	description = "Unobtanium Chainsaw",
 	inventory_image = "xtraores_axe_unobtanium.png",
@@ -678,6 +797,7 @@ minetest.register_tool("xtraores:axe_unobtanium", {
 		damage_groups = {fleshy=12},
 	},
 })
+
 minetest.register_tool("xtraores:sword_unobtanium", {
 	description = "Unobtanium Darkness",
 	inventory_image = "xtraores_sword_unobtanium.png",
@@ -690,6 +810,7 @@ minetest.register_tool("xtraores:sword_unobtanium", {
 		damage_groups = {fleshy=35},
 	}
 })
+
 minetest.register_craft({
 	output = 'xtraores:drill_unobtanium',
 	recipe = {
@@ -698,6 +819,7 @@ minetest.register_craft({
 		{'', 'default:diamond', ''},
 	}
 })
+
 minetest.register_craft({
 	output = 'xtraores:axe_unobtanium',
 	recipe = {
@@ -706,6 +828,7 @@ minetest.register_craft({
 		{'', 'xtraores:unobtanium_bar'},
 	}
 })
+
 minetest.register_craft({
 	output = 'xtraores:sword_unobtanium',
 	recipe = {
@@ -714,6 +837,7 @@ minetest.register_craft({
 		{'group:stick'},
 	}
 })
+
 minetest.register_ore({
 	ore_type       = "scatter",
 	ore            = "xtraores:stone_with_unobtanium",
@@ -725,7 +849,6 @@ minetest.register_ore({
 	height_max     = -10000,
 	flags          = "absheight",
 })
-
 minetest.register_node("xtraores:stone_with_titanium", {
 	description = "Titanium Ore",
 	tiles = {"default_stone.png^xtraores_mineral_titanium.png"},
@@ -734,6 +857,7 @@ minetest.register_node("xtraores:stone_with_titanium", {
 	drop = 'xtraores:titanium_lump',
 	sounds = default.node_sound_stone_defaults(),
 })
+
 minetest.register_node("xtraores:titanium_brick", {
 	description = "Titanium Bricks",
 	tiles = {"xtraores_titanium_brick.png"},
@@ -741,20 +865,24 @@ minetest.register_node("xtraores:titanium_brick", {
 	groups = {weryhard=0},
 	sounds = default.node_sound_stone_defaults(),
 })
+
 minetest.register_craftitem("xtraores:titanium_lump", {
 	description = "Titanium Lump",
 	inventory_image = "xtraores_titanium_lump.png",
 })
+
 minetest.register_craftitem("xtraores:titanium_bar", {
 	description = "Titanium Bar",
 	inventory_image = "xtraores_titanium_bar.png",
 })
+
 minetest.register_craft({
 	type = "cooking",
 	cooktime = 20,
 	output = "xtraores:titanium_bar",
 	recipe = "xtraores:titanium_lump",
 })
+
 minetest.register_craft({
 	output = 'xtraores:titanium_brick',
 	recipe = {
@@ -775,6 +903,7 @@ minetest.register_tool("xtraores:axe_titanium", {
 		damage_groups = {fleshy=15},
 	},
 })
+
 minetest.register_tool("xtraores:drill_titanium", {
 	description = "Titanium Drill",
 	inventory_image = "xtraores_drill_titanium.png",
@@ -789,6 +918,7 @@ minetest.register_tool("xtraores:drill_titanium", {
 		damage_groups = {fleshy=15},
 	},
 })
+
 minetest.register_tool("xtraores:sword_titanium", {
 	description = "Titanium Destructonator",
 	inventory_image = "xtraores_sword_titanium.png",
@@ -801,6 +931,7 @@ minetest.register_tool("xtraores:sword_titanium", {
 		damage_groups = {fleshy=40},
 	}
 })
+
 minetest.register_craft({
 	output = 'xtraores:drill_titanium',
 	recipe = {
@@ -809,6 +940,7 @@ minetest.register_craft({
 		{'', 'default:diamond', ''},
 	}
 })
+
 minetest.register_craft({
 	output = 'xtraores:axe_titanium',
 	recipe = {
@@ -817,6 +949,7 @@ minetest.register_craft({
 		{'', 'xtraores:titanium_bar'},
 	}
 })
+
 minetest.register_craft({
 	output = 'xtraores:sword_titanium',
 	recipe = {
@@ -825,6 +958,7 @@ minetest.register_craft({
 		{'group:stick'},
 	}
 })
+
 minetest.register_ore({
 	ore_type       = "scatter",
 	ore            = "xtraores:stone_with_titanium",
@@ -848,6 +982,7 @@ minetest.register_node("xtraores:geminitinum_brick", {
 	groups = {cracky=2},
 	sounds = default.node_sound_stone_defaults(),
 })
+
 minetest.register_node("xtraores:stone_with_geminitinum", {
 	description = "Geminitinum Ore",
 	tiles = {"default_stone.png^xtraores_mineral_geminitinum.png"},
@@ -856,20 +991,24 @@ minetest.register_node("xtraores:stone_with_geminitinum", {
 	drop = 'xtraores:geminitinum_lump',
 	sounds = default.node_sound_stone_defaults(),
 })
+
 minetest.register_craftitem("xtraores:geminitinum_lump", {
 	description = "Geminitinum Crystals",
 	inventory_image = "xtraores_geminitinum_lump.png",
 })
+
 minetest.register_craftitem("xtraores:geminitinum_bar", {
 	description = "Geminitinum Bar",
 	inventory_image = "xtraores_geminitinum_bar.png",
 })
+
 minetest.register_craft({
 	type = "cooking",
 	cooktime = 200,
 	output = "xtraores:geminitinum_bar",
 	recipe = "xtraores:geminitinum_lump",
 })
+
 minetest.register_craft({
 	output = 'xtraores:geminitinum_brick',
 	recipe = {
@@ -890,6 +1029,7 @@ minetest.register_tool("xtraores:axe_geminitinum", {
 		damage_groups = {fleshy=20},
 	},
 })
+
 minetest.register_tool("xtraores:drill_geminitinum", {
 	description = "Geminitinum Drill",
 	inventory_image = "xtraores_drill_geminitinum.png",
@@ -904,6 +1044,7 @@ minetest.register_tool("xtraores:drill_geminitinum", {
 		damage_groups = {fleshy=20},
 	},
 })
+
 minetest.register_tool("xtraores:sword_geminitinum", {
 	description = "Nyanmere",
 	inventory_image = "xtraores_sword_geminitinum.png",
@@ -916,6 +1057,7 @@ minetest.register_tool("xtraores:sword_geminitinum", {
 		damage_groups = {fleshy=50},
 	}
 })
+
 minetest.register_craft({
 	output = 'xtraores:drill_geminitinum',
 	recipe = {
@@ -924,6 +1066,7 @@ minetest.register_craft({
 		{'', 'default:diamond', ''},
 	}
 })
+
 minetest.register_craft({
 	output = 'xtraores:axe_geminitinum',
 	recipe = {
@@ -932,6 +1075,7 @@ minetest.register_craft({
 		{'', 'xtraores:geminitinum_bar'},
 	}
 })
+
 minetest.register_craft({
 	output = 'xtraores:sword_geminitinum',
 	recipe = {
@@ -940,6 +1084,7 @@ minetest.register_craft({
 		{'group:stick'},
 	}
 })
+
 minetest.register_ore({
 	ore_type       = "scatter",
 	ore            = "xtraores:stone_with_geminitinum",
@@ -971,6 +1116,7 @@ minetest.register_craft({
 		{'default:cobble'},
 	}
 })
+
 minetest.register_tool("xtraores:sword_excalibur", {
 	description = "Excalibur | 75 dmg",
 	inventory_image = "xtraores_sword_excalibur.png",
@@ -983,14 +1129,16 @@ minetest.register_tool("xtraores:sword_excalibur", {
 		damage_groups = {fleshy=75},
 	}
 })
+
 minetest.register_craft({
 	output = 'xtraores:sword_excalibur',
 	recipe = {
-		{'xtraores:sword_osminum', 'xtraores:sword_adamantite', 'xtraores:sword_rarium'},
+		{'xtraores:sword_osmium', 'xtraores:sword_adamantite', 'xtraores:sword_rarium'},
 		{'xtraores:sword_cobalt', 'default:sword_diamond', 'xtraores:sword_unobtanium'},
 		{'default:diamondblock', 'default:mese', 'default:diamondblock'},
 	}
 })
+
 minetest.register_node("xtraores:rainbow", {
 	description = "Rainbow Block",
 	tiles = {"xtraores_rainbow_block.png"},
@@ -999,14 +1147,16 @@ minetest.register_node("xtraores:rainbow", {
 	groups = {cracky=3},
 	sounds = default.node_sound_stone_defaults(),
 })
+
 minetest.register_craft({
 	output = 'xtraores:rainbow 10',
 	recipe = {
 		{'xtraores:adamantite_bar', 'xtraores:rarium_bar', 'xtraores:platinum_bar'},
-		{'xtraores:cobalt_bar', 'default:glass', 'xtraores:osminum_bar'},
+		{'xtraores:cobalt_bar', 'default:glass', 'xtraores:osmium_bar'},
 		{'default:diamond', 'default:mese_crystal', 'default:copper_ingot'},
 	}
 })
+
 minetest.register_tool("xtraores:spear_platinum", {
 	description = "Platinum Spear",
 	inventory_image = "xtraores_spear_platinum.png",
@@ -1020,6 +1170,7 @@ minetest.register_tool("xtraores:spear_platinum", {
 		damage_groups = {fleshy=7},
 	}
 })
+
 minetest.register_craft({
 	output = 'xtraores:spear_platinum',
 	recipe = {
@@ -1028,6 +1179,7 @@ minetest.register_craft({
 		{'group:stick', '', ''},
 	}
 })
+
 minetest.register_tool("xtraores:spear_cobalt", {
 	description = "Cobalt Spear",
 	inventory_image = "xtraores_spear_cobalt.png",
@@ -1041,6 +1193,7 @@ minetest.register_tool("xtraores:spear_cobalt", {
 		damage_groups = {fleshy=10},
 	}
 })
+
 minetest.register_craft({
 	output = 'xtraores:spear_cobalt',
 	recipe = {
@@ -1049,9 +1202,10 @@ minetest.register_craft({
 		{'group:stick', '', ''},
 	}
 })
-minetest.register_tool("xtraores:spear_osminum", {
-	description = "osminum spear",
-	inventory_image = "xtraores_spear_osminum.png",
+
+minetest.register_tool("xtraores:spear_osmium", {
+	description = "Osmium Spear",
+	inventory_image = "xtraores_spear_osmium.png",
 	range = 12,
 	tool_capabilities = {
 		full_punch_interval = 0.7,
@@ -1062,14 +1216,16 @@ minetest.register_tool("xtraores:spear_osminum", {
 		damage_groups = {fleshy=15},
 	}
 })
+
 minetest.register_craft({
-	output = 'xtraores:spear_osminum',
+	output = 'xtraores:spear_osmium',
 	recipe = {
-		{'', 'xtraores:osminum_bar', 'xtraores:osminum_bar'},
-		{'', 'group:stick', 'xtraores:osminum_bar'},
+		{'', 'xtraores:osmium_bar', 'xtraores:osmium_bar'},
+		{'', 'group:stick', 'xtraores:osmium_bar'},
 		{'group:stick', '', ''},
 	}
 })
+
 minetest.register_tool("xtraores:spear_adamantite", {
 	description = "Adamantite Spear",
 	inventory_image = "xtraores_spear_adamantite.png",
@@ -1083,6 +1239,7 @@ minetest.register_tool("xtraores:spear_adamantite", {
 		damage_groups = {fleshy=20},
 	}
 })
+
 minetest.register_craft({
 	output = 'xtraores:spear_adamantite',
 	recipe = {
@@ -1105,6 +1262,7 @@ minetest.register_tool("xtraores:spear_rarium", {
 		damage_groups = {fleshy=30},
 	}
 })
+
 minetest.register_craft({
 	output = 'xtraores:spear_rarium',
 	recipe = {
@@ -1113,6 +1271,7 @@ minetest.register_craft({
 		{'group:stick', '', ''},
 	}
 })
+
 minetest.register_tool("xtraores:spear_unobtanium", {
 	description = "Unobtanium Spear",
 	inventory_image = "xtraores_spear_unobtanium.png",
@@ -1126,6 +1285,7 @@ minetest.register_tool("xtraores:spear_unobtanium", {
 		damage_groups = {fleshy=35},
 	}
 })
+
 minetest.register_craft({
 	output = 'xtraores:spear_unobtanium',
 	recipe = {
@@ -1134,6 +1294,7 @@ minetest.register_craft({
 		{'group:stick', '', ''},
 	}
 })
+
 minetest.register_tool("xtraores:spear_titanium", {
 	description = "Titanium Spear",
 	inventory_image = "xtraores_spear_titanium.png",
@@ -1147,6 +1308,7 @@ minetest.register_tool("xtraores:spear_titanium", {
 		damage_groups = {fleshy=40},
 	}
 })
+
 minetest.register_craft({
 	output = 'xtraores:spear_titanium',
 	recipe = {
@@ -1155,6 +1317,7 @@ minetest.register_craft({
 		{'group:stick', '', ''},
 	}
 })
+
 minetest.register_tool("xtraores:spear_geminitinum", {
 	description = "Geminitinum Spear",
 	inventory_image = "xtraores_spear_geminitinum.png",
@@ -1168,6 +1331,7 @@ minetest.register_tool("xtraores:spear_geminitinum", {
 		damage_groups = {fleshy=50},
 	}
 })
+
 minetest.register_craft({
 	output = 'xtraores:spear_geminitinum',
 	recipe = {
@@ -1198,6 +1362,7 @@ minetest.register_tool("xtraores:titanium_gun", {
 		local inv = user:get_inventory()
 		if not inv:contains_item("main", "xtraores:titanium_bullet 1") then
 			minetest.sound_play("empty", {object=user})
+
 			return itemstack
 		end
 		if not minetest.setting_getbool("creative_mode") then
@@ -1233,6 +1398,7 @@ local XTRAORES_TB = {
 	lastpos= {},
 	collisionbox = {0, 0, 0, 0, 0, 0},
 }
+
 XTRAORES_TB.on_step = function(self, dtime)
 	self.timer = self.timer + dtime
 	local pos = self.object:getpos()
@@ -1278,27 +1444,31 @@ end
 minetest.register_entity("xtraores:tb", XTRAORES_TB )
 
 
-
 minetest.register_craftitem("xtraores:titanium_barrel", {
 	description = "Titanium Barrel (titanium gun part)",
 	inventory_image = "xtraores_titanium_barrel.png",
 })
+
 minetest.register_craftitem("xtraores:titanium_top", {
 	description = "Titanium Gun Top (titanium gun part)",
 	inventory_image = "xtraores_titanium_top.png",
 })
+
 minetest.register_craftitem("xtraores:titanium_bottom", {
 	description = "Titanium Gun Bottom (titanium gun part)",
 	inventory_image = "xtraores_titanium_bottom.png",
 })
+
 minetest.register_craftitem("xtraores:titanium_handle", {
 	description = "Titanium Handle (titanium gun part)",
 	inventory_image = "xtraores_titanium_handle.png",
 })
+
 minetest.register_craftitem("xtraores:titanium_mechanism", {
 	description = "Titanium Gun Mechanism (titanium gun part)",
 	inventory_image = "xtraores_titanium_mechanism.png",
 })
+
 minetest.register_craft({
 	output = 'xtraores:titanium_gun',
 	recipe = {
@@ -1316,6 +1486,7 @@ minetest.register_craft({
 		{'xtraores:titanium_bar', 'xtraores:titanium_bar', 'xtraores:titanium_bar'},
 	}
 })
+
 minetest.register_craft({
 	output = 'xtraores:titanium_top',
 	recipe = {
@@ -1323,6 +1494,7 @@ minetest.register_craft({
 		{'', '', 'xtraores:titanium_bar'},
 	}
 })
+
 minetest.register_craft({
 	output = 'xtraores:titanium_bottom',
 	recipe = {
@@ -1330,6 +1502,7 @@ minetest.register_craft({
 		{'default:mese', 'default:mese', ''},
 	}
 })
+
 minetest.register_craft({
 	output = 'xtraores:titanium_handle',
 	recipe = {
@@ -1338,6 +1511,7 @@ minetest.register_craft({
 		{'', 'xtraores:titanium_bar', 'xtraores:titanium_bar'},
 	}
 })
+
 minetest.register_craft({
 	output = 'xtraores:titanium_mechanism',
 	recipe = {
@@ -1354,6 +1528,7 @@ minetest.register_tool("xtraores:precious_gun", {
 		local inv = user:get_inventory()
 		if not inv:contains_item("main", "xtraores:titanium_bullet 1") then
 			minetest.sound_play("empty", {object=user})
+
 			return itemstack
 		end
 		if not minetest.setting_getbool("creative_mode") then
@@ -1389,6 +1564,7 @@ local XTRAORES_PTB = {
 	lastpos= {},
 	collisionbox = {0, 0, 0, 0, 0, 0},
 }
+
 XTRAORES_PTB.on_step = function(self, dtime)
 	self.timer = self.timer + dtime
 	local pos = self.object:getpos()
@@ -1442,6 +1618,7 @@ minetest.register_craft({
 
 	}
 })
+
 minetest.register_craftitem("xtraores:chunai", {
 	description = "Titanium Chunai | 60 dmg",
 	range = 0,
@@ -1484,6 +1661,7 @@ local XTRAORES_CE = {
 	lastpos= {},
 	collisionbox = {0, 0, 0, 0, 0, 0},
 }
+
 XTRAORES_CE.on_step = function(self, dtime)
 	self.timer = self.timer + dtime
 	local pos = self.object:getpos()
@@ -1527,7 +1705,6 @@ XTRAORES_CE.on_step = function(self, dtime)
 end
 
 minetest.register_entity("xtraores:ce", XTRAORES_CE )
-
 
 minetest.register_craft({
 	output = 'xtraores:chunai 25',
@@ -1587,6 +1764,7 @@ local XTRAORES_DB = {
 	lastpos= {},
 	collisionbox = {0, 0, 0, 0, 0, 0},
 }
+
 XTRAORES_DB.on_step = function(self, dtime)
 	self.timer = self.timer + dtime
 	local pos = self.object:getpos()
@@ -1661,12 +1839,14 @@ minetest.register_ore({
 	height_max     = -8000,
 	flags          = "absheight",
 })
+
 minetest.register_craft({
 	output = 'xtraores:redmarble_polished',
 	recipe = {
 		{'xtraores:redmarble'},
 	}
 })
+
 minetest.register_craft({
 	output = 'xtraores:redmarble_bricks 4',
 	recipe = {
@@ -1674,6 +1854,7 @@ minetest.register_craft({
 		{'xtraores:redmarble', 'xtraores:redmarble'},
 	}
 })
+
 minetest.register_node("xtraores:redmarble_polished", {
 	description = "Polished Red Marble",
 	tiles = {"xtraores_redmarble_polished.png"},
@@ -1681,6 +1862,7 @@ minetest.register_node("xtraores:redmarble_polished", {
 	groups = {cracky=3},
 	sounds = default.node_sound_stone_defaults(),
 })
+
 minetest.register_node("xtraores:redmarble_bricks", {
 	description = "Red Marble Bricks",
 	tiles = {"xtraores_redmarble_bricks.png"},
@@ -1688,6 +1870,7 @@ minetest.register_node("xtraores:redmarble_bricks", {
 	groups = {cracky=3},
 	sounds = default.node_sound_stone_defaults(),
 })
+
 minetest.register_node("xtraores:redmarble", {
 	description = "Red Marble",
 	tiles = {"xtraores_redmarble.png"},
@@ -1707,12 +1890,14 @@ minetest.register_ore({
 	height_max     = -4000,
 	flags          = "absheight",
 })
+
 minetest.register_craft({
 	output = 'xtraores:bluemarble_polished',
 	recipe = {
 		{'xtraores:bluemarble'},
 	}
 })
+
 minetest.register_craft({
 	output = 'xtraores:bluemarble_bricks 4',
 	recipe = {
@@ -1720,6 +1905,7 @@ minetest.register_craft({
 		{'xtraores:bluemarble', 'xtraores:bluemarble'},
 	}
 })
+
 minetest.register_node("xtraores:bluemarble_polished", {
 	description = "Polished Blue Marble",
 	tiles = {"xtraores_bluemarble_polished.png"},
@@ -1727,6 +1913,7 @@ minetest.register_node("xtraores:bluemarble_polished", {
 	groups = {cracky=3},
 	sounds = default.node_sound_stone_defaults(),
 })
+
 minetest.register_node("xtraores:bluemarble_bricks", {
 	description = "Blue Marble Bricks",
 	tiles = {"xtraores_bluemarble_bricks.png"},
@@ -1734,6 +1921,7 @@ minetest.register_node("xtraores:bluemarble_bricks", {
 	groups = {cracky=3},
 	sounds = default.node_sound_stone_defaults(),
 })
+
 minetest.register_node("xtraores:bluemarble", {
 	description = "Blue Marble",
 	tiles = {"xtraores_bluemarble.png"},
@@ -1753,12 +1941,14 @@ minetest.register_ore({
 	height_max     = -2000,
 	flags          = "absheight",
 })
+
 minetest.register_craft({
 	output = 'xtraores:blackmarble_polished',
 	recipe = {
 		{'xtraores:blackmarble'},
 	}
 })
+
 minetest.register_craft({
 	output = 'xtraores:blackmarble_bricks 4',
 	recipe = {
@@ -1766,6 +1956,7 @@ minetest.register_craft({
 		{'xtraores:blackmarble', 'xtraores:blackmarble'},
 	}
 })
+
 minetest.register_node("xtraores:blackmarble_polished", {
 	description = "Polished Black Marble",
 	tiles = {"xtraores_blackmarble_polished.png"},
@@ -1773,6 +1964,7 @@ minetest.register_node("xtraores:blackmarble_polished", {
 	groups = {cracky=3},
 	sounds = default.node_sound_stone_defaults(),
 })
+
 minetest.register_node("xtraores:blackmarble_bricks", {
 	description = "Black Marble Bricks",
 	tiles = {"xtraores_blackmarble_bricks.png"},
@@ -1780,6 +1972,7 @@ minetest.register_node("xtraores:blackmarble_bricks", {
 	groups = {cracky=3},
 	sounds = default.node_sound_stone_defaults(),
 })
+
 minetest.register_node("xtraores:blackmarble", {
 	description = "Black Marble",
 	tiles = {"xtraores_blackmarble.png"},
@@ -1799,12 +1992,14 @@ minetest.register_ore({
 	height_max     = -1000,
 	flags          = "absheight",
 })
+
 minetest.register_craft({
 	output = 'xtraores:marble_polished',
 	recipe = {
 		{'xtraores:marble'},
 	}
 })
+
 minetest.register_craft({
 	output = 'xtraores:marble_bricks 4',
 	recipe = {
@@ -1812,6 +2007,7 @@ minetest.register_craft({
 		{'xtraores:marble', 'xtraores:marble'},
 	}
 })
+
 minetest.register_node("xtraores:marble_polished", {
 	description = "Polished White Marble",
 	tiles = {"xtraores_marble_polished.png"},
@@ -1819,6 +2015,7 @@ minetest.register_node("xtraores:marble_polished", {
 	groups = {cracky=3},
 	sounds = default.node_sound_stone_defaults(),
 })
+
 minetest.register_node("xtraores:marble_bricks", {
 	description = "White Marble Bricks",
 	tiles = {"xtraores_marble_bricks.png"},
@@ -1826,6 +2023,7 @@ minetest.register_node("xtraores:marble_bricks", {
 	groups = {cracky=3},
 	sounds = default.node_sound_stone_defaults(),
 })
+
 minetest.register_node("xtraores:marble", {
 	description = "White Marble",
 	tiles = {"xtraores_marble.png"},
@@ -1847,15 +2045,12 @@ minetest.register_tool("xtraores:spear_gungir", {
 		damage_groups = {fleshy=160},
 	}
 })
+
 minetest.register_craft({
 	output = 'xtraores:spear_gungir',
 	recipe = {
 		{'xtraores:sword_excalibur', 'xtraores:sword_excalibur', 'xtraores:geminitinum_bar'},
 		{'xtraores:spear_geminitinum', 'xtraores:spear_geminitinum', 'xtraores:geminitinum_bar'},
 		{'xtraores:sword_excalibur', 'xtraores:sword_excalibur', 'xtraores:geminitinum_bar'},
-
 	}
 })
-
-
-
