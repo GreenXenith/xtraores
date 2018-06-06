@@ -10,7 +10,7 @@ This is GreenDimond's fork of
 
 *Insert thematic music* 
 
-The old one needed some help. This is built with the server "Undercore" in mind. This can run completely vanilla, but I *highly* recommend all of the optional dependencies.
+This mod is meant as a drop-in replacement for any older (pre-2018) versions of xtraores (or just on its own as a mod). The old one needed some help. This is built with the server "Undercore" in mind. This can run completely vanilla, but I *highly* recommend all of the optional dependencies. See depends.txt for details.
 
 In a nutshell:
 ---
