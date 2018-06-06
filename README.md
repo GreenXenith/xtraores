@@ -1,5 +1,5 @@
 Oh, hello there.  
-This is GreenDimond's fork of 
+This is GreenDimond's fork of  
 	__  ___                                   
 	\ \/ / |_ _ __ __ _  ___  _ __ ___  ___   
 	 \  /| __| '__/ _` |/ _ \| '__/ _ \/ __|  
