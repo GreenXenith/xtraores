@@ -1,5 +1,5 @@
 --Registration function to register all the marble things
-function xtraores.register_marble(name, def)
+local function register_marble(name, def)
 	local desc
 	if name ~= "" then
 		desc = xtraores.upper(name).." "
@@ -115,19 +115,19 @@ function xtraores.register_marble(name, def)
 end
 
 --Register the marble things
-xtraores.register_marble("red", {
+register_marble("red", {
 	height = -8000
 })
 
-xtraores.register_marble("blue", {
+register_marble("blue", {
 	height = -4000
 })
 
-xtraores.register_marble("black", {
+register_marble("black", {
 	height = -2000
 })
 
-xtraores.register_marble("", {
+register_marble("", {
 	height = -1000
 })
 

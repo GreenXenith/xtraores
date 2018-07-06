@@ -9,7 +9,7 @@ function xtraores.upper(str)
 end
 
 --Registration function to register all items/blocks for specified ore
-function xtraores.register_all(name, def)
+local function register_all(name, def)
 	if def.ore then
 		minetest.register_node("xtraores:stone_with_"..name, {
 			description = xtraores.upper(name).." Ore",
@@ -337,7 +337,7 @@ function xtraores.register_all(name, def)
 end
 
 --Register the things
-xtraores.register_all("platinum", {
+register_all("platinum", {
 	pick = {{cracky = {times={[1]=2.4, [2]=1.2, [3]=0.60}, uses=15, maxlevel=3}}, 5},
 	shovel = {{crumbly = {times={[1]=1.20, [2]=0.60, [3]=0.30}, uses=15, maxlevel=3}}, 4},
 	axe = {{choppy={times={[1]=2.20, [2]=1.00, [3]=0.60}, uses=15, maxlevel=3}}, 6},
@@ -346,7 +346,7 @@ xtraores.register_all("platinum", {
 	ore = {7, -100, {cracky=2}},
 })
 
-xtraores.register_all("cobalt", {
+register_all("cobalt", {
 	pick = {{cracky = {times={[1]=1.5, [2]=0.85, [3]=0.40}, uses=60, maxlevel=3}, weryhard = {times={[3]=3.00}, uses=60, maxlevel=3}}, 8},
 	shovel = {{crumbly = {times={[1]=0.90, [2]=0.40, [3]=0.20}, uses=60, maxlevel=3}}, 7},
 	axe = {{choppy={times={[1]=1.80, [2]=0.70, [3]=0.30}, uses=60, maxlevel=3}}, 9},
@@ -355,7 +355,7 @@ xtraores.register_all("cobalt", {
 	ore = {12, -650, {cracky=1}},
 })
 
-xtraores.register_all("osmium", {
+register_all("osmium", {
 	lump = "Osmium Crystal",
 	pick = {{cracky = {times={[1]=1.2, [2]=0.70, [3]=0.30}, uses=100, maxlevel=3}, weryhard = {times={[3]=2.00, [2]=3.00}, uses=100, maxlevel=3}}, 13},
 	shovel = {{crumbly = {times={[1]=0.60, [2]=0.25, [3]=0.15}, uses=100, maxlevel=3}}, 12},
@@ -365,7 +365,7 @@ xtraores.register_all("osmium", {
 	ore = {15, -1000, {weryhard=3}},
 })
 
-xtraores.register_all("adamantite", {
+register_all("adamantite", {
 	lump = "Adamantite Crystal",
 	pick = {{cracky = {times={[1]=0.6, [2]=0.35, [3]=0.15}, uses=200, maxlevel=3}, weryhard = {times={[3]=1.00, [2]=2.00, [1]=3.00}, uses=200, maxlevel=3}}, 18},
 	shovel = {{crumbly = {times={[1]=0.30, [2]=0.125, [3]=0.075}, uses=200, maxlevel=3}}, 17},
@@ -375,7 +375,7 @@ xtraores.register_all("adamantite", {
 	ore = {20, -2000, {weryhard=2}},
 })
 
-xtraores.register_all("rarium", {
+register_all("rarium", {
 	drill = {{cracky = {times={[1]=0.3, [2]=0.125, [3]=0.075}, uses=350, maxlevel=3}, weryhard = {times={[3]=0.50, [2]=1.00, [1]=1.50, [0]=2.00}, uses=350, maxlevel=3}, crumbly = {times={[1]=0.15, [2]=0.06, [3]=0.03}, uses=350, maxlevel=3}}, 8},
 	chainsaw = {{choppy={times={[1]=0.20, [2]=0.05, [3]=0.015}, uses=350, maxlevel=3}}, 8},
 	sword = {{snappy={times={[1]=0.25, [2]=0.10, [3]=0.025}, uses=350, maxlevel=3}}, 30},
@@ -383,7 +383,7 @@ xtraores.register_all("rarium", {
 	ore = {25, -5000, {weryhard=1}},
 })
 
-xtraores.register_all("unobtanium", {
+register_all("unobtanium", {
 	drill = {{cracky = {times={[1]=0.15, [2]=0.06, [3]=0.04}, uses=500, maxlevel=3}, weryhard = {times={[3]=0.25, [2]=0.50, [1]=0.75, [0]=1.00}, uses=500, maxlevel=3}, crumbly = {times={[1]=0.15, [2]=0.06, [3]=0.03}, uses=500, maxlevel=3}}, 12},
 	chainsaw = {{choppy={times={[1]=0.10, [2]=0.025, [3]=0.0075}, uses=500, maxlevel=3}}, 12},
 	sword = {{snappy={times={[1]=0.0125, [2]=0.05, [3]=0.006}, uses=500, maxlevel=3}}, 35},
@@ -391,7 +391,7 @@ xtraores.register_all("unobtanium", {
 	ore = {30, -10000, {weryhard=0}},
 })
 
-xtraores.register_all("titanium", {
+register_all("titanium", {
 	drill = {{cracky = {times={[1]=0.10, [2]=0.04, [3]=0.02}, uses=650, maxlevel=3}, weryhard = {times={[3]=0.10, [2]=0.20, [1]=0.60, [0]=0.80}, uses=650, maxlevel=3}, crumbly = {times={[1]=0.10, [2]=0.04, [3]=0.02}, uses=650, maxlevel=3}}, 15},
 	chainsaw = {{choppy={times={[1]=0.075, [2]=0.020, [3]=0.005}, uses=650, maxlevel=3}}, 15},
 	sword = {{snappy={times={[1]=0.0125, [2]=0.05, [3]=0.006}, uses=650, maxlevel=3}}, 40},
@@ -399,7 +399,7 @@ xtraores.register_all("titanium", {
 	ore = {30, -20000, {weryhard=0}},
 })
 
-xtraores.register_all("geminitinum", {
+register_all("geminitinum", {
 	lump = "Geminitinum Crystal",
 	ore_tiles = {{name="xtraores_mineral_geminitinum.png", animation={type="vertical_frames", aspect_w=16, aspect_h=16, length=2.0}}},
 	brick_tiles = {{name="xtraores_geminitinum_brick.png", animation={type="vertical_frames", aspect_w=16, aspect_h=16, length=1}}},
@@ -419,7 +419,7 @@ xtraores.register_all("geminitinum", {
 How to register a thing:
 
 (all inputs are optional)
-xtraores.register_all("name", {
+register_all("name", {
 	ore_tiles = {tiles},
 	brick_tiles = {tiles},
 	block_tiles = {tiles},

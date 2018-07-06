@@ -1,5 +1,5 @@
 --Registers a gun \o/
-function xtraores.register_gun(name, def)
+local function register_gun(name, def)
 	local udesc
 	local bdef
 
@@ -103,7 +103,7 @@ end
 
 How to register a gun:
 
-xtraores.register_gun("name", {
+register_gun("name", {
 	description = "string" (optional)
 	damage = damage inflicted (number),
 	speed = speed of bullet (number),
@@ -116,7 +116,7 @@ xtraores.register_gun("name", {
 ]]
 
 --Register the guns
-xtraores.register_gun("titanium", {
+register_gun("titanium", {
 	damage = 70,
 	speed = 280,
 	bullet_type = 308,
@@ -125,7 +125,7 @@ xtraores.register_gun("titanium", {
 	sound = "normal",
 })
 
-xtraores.register_gun("precious", {
+register_gun("precious", {
 	damage = 95,
 	speed = 280,
 	bullet_type = 308,
@@ -134,7 +134,7 @@ xtraores.register_gun("precious", {
 	sound = "normal",
 })
 
-xtraores.register_gun("laser", {
+register_gun("laser", {
 	damage = 200,
 	speed = 50,
 	bullet_type = "laser",
@@ -143,7 +143,7 @@ xtraores.register_gun("laser", {
 	sound = "laser",
 })
 
-xtraores.register_gun("rainbow", {
+register_gun("rainbow", {
 	damage = 250,
 	speed = 50,
 	bullet_type = "laser",
@@ -152,7 +152,7 @@ xtraores.register_gun("rainbow", {
 	sound = "laser",
 })
 
-xtraores.register_gun("deagle", {
+register_gun("deagle", {
 	description = "Desert Eagle",
 	damage = 45,
 	speed = 280,

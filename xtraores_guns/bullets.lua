@@ -30,7 +30,7 @@ if minetest.get_modpath("technic") then
 	end
 
 	--Modify it for our needs, of course
-	function xtraores.register_base_machine(data)
+	local function register_base_machine(data)
 		local typename = data.typename
 		local input_size = 4--technic.recipes[typename].input_size
 		local machine_name = data.machine_name
@@ -271,7 +271,7 @@ if minetest.get_modpath("technic") then
 	end -- End registration
 
 	function technic.register_bullet_press(data)	
-		xtraores.register_base_machine(data)
+		register_base_machine(data)
 	end
 
 	technic.register_recipe_type("press", {

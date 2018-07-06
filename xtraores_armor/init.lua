@@ -1,7 +1,7 @@
 --Is 3d_armor actually enabled?
 if minetest.get_modpath("3d_armor") then
 	--Armor registration function
-	function xtraores.register_armor(name, def)
+	local function register_armor(name, def)
 		armor:register_armor("xtraores_armor:helmet_"..name, {
 			description = xtraores.upper(name).." Helmet",
 			inventory_image = "xtraores_armor_inv_helmet_"..name..".png",
@@ -81,7 +81,7 @@ if minetest.get_modpath("3d_armor") then
 	end
 
 	--Register the armors (that's a lot of words)
-	xtraores.register_armor("platinum", {
+	register_armor("platinum", {
 		helmet_helmet_groups = {armor_head=12, armor_heal=7, armor_use=200},
 		chestplate_chestplate_groups = {armor_torso=17, armor_heal=7, armor_use=200},
 		leggings_leggings_groups = {armor_legs=17, armor_heal=7, armor_use=200},
@@ -89,7 +89,7 @@ if minetest.get_modpath("3d_armor") then
 		shield_shield_groups = {armor_shield=12, armor_heal=7, armor_use=200},
 	})
 
-	xtraores.register_armor("cobalt", {
+	register_armor("cobalt", {
 		helmet_helmet_groups = {armor_head=15, armor_heal=12, physics_speed=0.15, armor_use=75},
 		chestplate_chestplate_groups = {armor_torso=20, armor_heal=12, physics_speed=0.15, armor_use=75},
 		leggings_leggings_groups = {armor_legs=20, armor_heal=12, physics_speed=0.15, armor_use=75},
@@ -97,7 +97,7 @@ if minetest.get_modpath("3d_armor") then
 		shield_shield_groups = {armor_shield=15, armor_heal=12, physics_speed=0.15, armor_use=75},
 	})
 
-	xtraores.register_armor("osmium", {
+	register_armor("osmium", {
 		helmet_groups = {armor_head=15.4, armor_heal=12, physics_jump=0.15, armor_use=50},
 		chestplate_groups = {armor_torso=20.4, armor_heal=12, physics_jump=0.15, armor_use=50},
 		leggings_groups = {armor_legs=20.4, armor_heal=12, physics_jump=0.15, armor_use=50},
@@ -106,7 +106,7 @@ if minetest.get_modpath("3d_armor") then
 
 	})
 
-	xtraores.register_armor("adamantite", {
+	register_armor("adamantite", {
 		helmet_groups = {armor_head=16, armor_heal=12, physics_gravity=-0.15, armor_use=30},
 		chestplate_groups = {armor_torso=21, armor_heal=12, physics_gravity=-0.15, armor_use=30},
 		leggings_groups = {armor_legs=21, armor_heal=12, physics_gravity=-0.15, armor_use=30},
@@ -114,7 +114,7 @@ if minetest.get_modpath("3d_armor") then
 		shield_groups = {armor_shield=16, armor_heal=12, physics_gravity=-0.15, armor_use=75},
 	})
 
-	xtraores.register_armor("rarium", {
+	register_armor("rarium", {
 		helmet_groups = {armor_head=16.4, armor_heal=12, physics_gravity=-0.15, physics_speed=0.15, physics_jump=0.15, armor_use=20},
 		chestplate_groups = {armor_torso=21.4, armor_heal=12, physics_gravity=-0.15, physics_speed=0.15, physics_jump=0.15, armor_use=20},
 		leggings_groups = {armor_legs=21.4, armor_heal=12, physics_gravity=-0.15, physics_speed=0.15, physics_jump=0.15, armor_use=20},
@@ -122,7 +122,7 @@ if minetest.get_modpath("3d_armor") then
 		shield_groups = {armor_shield=16.4, armor_heal=12, physics_gravity=-0.15, physics_speed=0.15, physics_jump=0.15, armor_use=20},
 	})
 
-	xtraores.register_armor("unobtanium", {
+	register_armor("unobtanium", {
 		helmet_groups = {armor_head=17, armor_heal=12, physics_gravity=-0.15, physics_speed=0.15, physics_jump=0.15, armor_fire=1, armor_use=20},
 		chestplate_groups = {armor_torso=22, armor_heal=12, physics_gravity=-0.15, physics_speed=0.15, physics_jump=0.15, armor_fire=1, armor_use=20},
 		leggings_groups = {armor_legs=22, armor_heal=12, physics_gravity=-0.15, physics_speed=0.15, physics_jump=0.15, armor_fire=1, armor_use=20},
@@ -130,7 +130,7 @@ if minetest.get_modpath("3d_armor") then
 		shield_groups = {armor_shield=17, armor_heal=12, physics_gravity=-0.15, physics_speed=0.15, physics_jump=0.15, armor_fire=1, armor_use=20},
 	})
 
-	xtraores.register_armor("titanium", {
+	register_armor("titanium", {
 		helmet_groups = {armor_head=17.6, armor_heal=14, physics_gravity=-0.18, physics_speed=0.25, physics_jump=0.16, armor_fire=1, armor_use=20},
 		chestplate_groups = {armor_torso=22.6, armor_heal=14, physics_gravity=-0.18, physics_speed=0.25, physics_jump=0.16, armor_fire=1, armor_use=20},
 		leggings_groups = {armor_legs=22.6, armor_heal=14, physics_gravity=-0.18, physics_speed=0.25, physics_jump=0.16, armor_fire=1, armor_use=20},
