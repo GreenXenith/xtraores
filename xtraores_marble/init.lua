@@ -116,7 +116,7 @@ local function register_marble(name, def)
 			description = desc.."Marble",
 			tiles = {"xtraores_"..name.."marble.png"},
 			groups ={cracky = 3},
-			sounds =default.node_sound_stone_defaults()
+			sounds = default.node_sound_stone_defaults()
 		})
 
 		stairsplus:register_all("xtraores_marble", name.."marble_polished", "xtraores_marble:"..name.."marble_polished", {

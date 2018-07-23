@@ -28,7 +28,7 @@ local function register_all(name, def)
 			clust_num_ores = 5,
 			clust_size     = 3,
 			y_min          = -31000,
-			y_max     = def.ore[2],
+			y_max		   = def.ore[2],
 			flags          = "absheight",
 		})
 	end
@@ -85,7 +85,7 @@ local function register_all(name, def)
 	if def.compressed_block ~= false then
 		minetest.register_node("xtraores:"..name.."_block_compressed", {
 			description = "Compressed "..xtraores.upper(name).." Block",
-			tiles = def.block_tiles or {"xtraores_"..name.."_block_compressed.png"},
+			tiles = def.compressed_block_tiles or {"xtraores_"..name.."_block_compressed.png"},
 			is_ground_content = true,
 			groups = def.ore[3],
 			sounds = default.node_sound_stone_defaults(),
@@ -124,7 +124,7 @@ local function register_all(name, def)
 	if def.chiseled_block ~= false then
 		minetest.register_node("xtraores:"..name.."_block_chiseled", {
 			description = "Chiseled "..xtraores.upper(name).." Block",
-			tiles = def.block_tiles or {"xtraores_"..name.."_block_chiseled.png"},
+			tiles = def.chiseled_block_tiles or {"xtraores_"..name.."_block_chiseled.png"},
 			is_ground_content = true,
 			groups = def.ore[3],
 			sounds = default.node_sound_stone_defaults(),
@@ -139,6 +139,70 @@ local function register_all(name, def)
 			},
 			replacements = {{"screwdriver:screwdriver", "screwdriver:screwdriver"}},
 		})
+	end
+
+	if def.stair ~= false then
+		stairs.register_stair_and_slab(name.."_brick", "xtraores:"..name.."_brick",
+			def.ore[3],
+			def.brick_tiles or {"xtraores_"..name.."_brick.png"},
+			xtraores.upper(name).." Brick Stair",
+			xtraores.upper(name).." Brick Slab",
+			default.node_sound_stone_defaults()
+		)
+
+		stairs.register_stair_and_slab(name.."_block", "xtraores:"..name.."_block",
+			def.ore[3],
+			def.block_tiles or {"xtraores_"..name.."_block.png"},
+			xtraores.upper(name).." Block Stair",
+			xtraores.upper(name).." Block Slab",
+			default.node_sound_stone_defaults()
+		)
+
+		stairs.register_stair_and_slab(name.."_block_compressed", "xtraores:"..name.."_block_compressed",
+			def.ore[3],
+			def.compressed_block_tiles or {"xtraores_"..name.."_block_compressed.png"},
+			"Compressed "..xtraores.upper(name).." Block Stair",
+			"Compressed "..xtraores.upper(name).." Block Slab",
+			default.node_sound_stone_defaults()
+		)
+
+		stairs.register_stair_and_slab(name.."_block_chiseled", "xtraores:"..name.."_block_chiseled",
+			def.ore[3],
+			def.chiseled_block_tiles or {"xtraores_"..name.."_block_chiseled.png"},
+			"Chiseled "..xtraores.upper(name).." Block Stair",
+			"Chiseled "..xtraores.upper(name).." Block Slab",
+			default.node_sound_stone_defaults()
+		)
+
+		if minetest.global_exists("stairsplus") then
+			stairsplus:register_all("xtraores", name.."_block", "xtraores:"..name.."_block", {
+				description = xtraores.upper(name).. " Block",
+				tiles = def.block_tiles or {"xtraores_"..name.."_block.png"},
+				groups = def.ore[3],
+				sounds = default.node_sound_stone_defaults()
+			})
+
+			stairsplus:register_all("xtraores", name.."_brick", "xtraores:"..name.."_brick", {
+				description = xtraores.upper(name).." Brick",
+				tiles = def.brick_tiles or {"xtraores_"..name.."_brick.png"},
+				groups = def.ore[3],
+				sounds = default.node_sound_stone_defaults()
+			})
+
+			stairsplus:register_all("xtraores", name.."_block_compressed", "xtraores:"..name.."_block_compressed", {
+				description = xtraores.upper(name).." Compressed Block",
+				tiles = def.compressed_block_tiles or {"xtraores_"..name.."_block_compressed.png"},
+				groups = def.ore[3],
+				sounds = default.node_sound_stone_defaults()
+			})
+
+			stairsplus:register_all("xtraores", name.."_block_chiseled", "xtraores:"..name.."_block_chiseled", {
+				description = xtraores.upper(name).." Chiseled Block",
+				tiles = def.chiseled_block_tiles or {"xtraores_"..name.."_block_chiseled.png"},
+				groups = def.ore[3],
+				sounds = default.node_sound_stone_defaults()
+			})
+		end
 	end
 
 	minetest.register_craftitem("xtraores:"..name.."_lump", {
@@ -423,8 +487,13 @@ register_all("name", {
 	ore_tiles = {tiles},
 	brick_tiles = {tiles},
 	block_tiles = {tiles},
+	compressed_block_tiles = {tiles},
+	chiseled_block_tiles = {tiles},
 	block = false,
+	compressed_block = false,
+	chiseled_block = false,
 	brick = false,
+	stair = false,
 	dust = false,
 	lump = "lump description",
 	ingot = "ingot description",
