@@ -302,7 +302,7 @@ minetest.register_craft({
 	recipe = {
 		{"xtraores:titanium_ingot", "xtraores:titanium_ingot", "xtraores:titanium_ingot"},
 		{"", "xtraores_guns:mechanism", grip},
-		{"", "", grip},	
+		{"", "", grip},
 	}
 })
 

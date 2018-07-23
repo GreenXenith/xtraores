@@ -119,7 +119,7 @@ local function register_all(name, def)
 				recipe = {"xtraores:"..name.."_block_compressed"},
 			})
 		end
-	end	
+	end
 
 	if def.chiseled_block ~= false then
 		minetest.register_node("xtraores:"..name.."_block_chiseled", {
@@ -139,7 +139,7 @@ local function register_all(name, def)
 			},
 			replacements = {{"screwdriver:screwdriver", "screwdriver:screwdriver"}},
 		})
-	end	
+	end
 
 	minetest.register_craftitem("xtraores:"..name.."_lump", {
 		description = def.lump or xtraores.upper(name).." Lump",

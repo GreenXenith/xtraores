@@ -1,9 +1,10 @@
 default
-tnt
 stairs
-technic?
-pipeworks?
-homedecor?
-moreores?
+tnt
 caverealms?
 ethereal?
+homedecor?
+moreores?
+moreblocks?
+pipeworks?
+technic?
