@@ -142,66 +142,82 @@ local function register_all(name, def)
 	end
 
 	if def.stair ~= false then
-		stairs.register_stair_and_slab(name.."_brick", "xtraores:"..name.."_brick",
-			def.ore[3],
-			def.brick_tiles or {"xtraores_"..name.."_brick.png"},
-			xtraores.upper(name).." Brick Stair",
-			xtraores.upper(name).." Brick Slab",
-			default.node_sound_stone_defaults()
-		)
+		if def.brick ~= false then
+			stairs.register_stair_and_slab(name.."_brick", "xtraores:"..name.."_brick",
+				def.ore[3],
+				def.brick_tiles or {"xtraores_"..name.."_brick.png"},
+				xtraores.upper(name).." Brick Stair",
+				xtraores.upper(name).." Brick Slab",
+				default.node_sound_stone_defaults()
+			)
+		end
 
-		stairs.register_stair_and_slab(name.."_block", "xtraores:"..name.."_block",
-			def.ore[3],
-			def.block_tiles or {"xtraores_"..name.."_block.png"},
-			xtraores.upper(name).." Block Stair",
-			xtraores.upper(name).." Block Slab",
-			default.node_sound_stone_defaults()
-		)
+		if def.block ~= false then
+			stairs.register_stair_and_slab(name.."_block", "xtraores:"..name.."_block",
+				def.ore[3],
+				def.block_tiles or {"xtraores_"..name.."_block.png"},
+				xtraores.upper(name).." Block Stair",
+				xtraores.upper(name).." Block Slab",
+				default.node_sound_stone_defaults()
+			)
+		end
 
-		stairs.register_stair_and_slab(name.."_block_compressed", "xtraores:"..name.."_block_compressed",
-			def.ore[3],
-			def.compressed_block_tiles or {"xtraores_"..name.."_block_compressed.png"},
-			"Compressed "..xtraores.upper(name).." Block Stair",
-			"Compressed "..xtraores.upper(name).." Block Slab",
-			default.node_sound_stone_defaults()
-		)
+		if def.compressed_block ~= false then
+			stairs.register_stair_and_slab(name.."_block_compressed", "xtraores:"..name.."_block_compressed",
+				def.ore[3],
+				def.compressed_block_tiles or {"xtraores_"..name.."_block_compressed.png"},
+				"Compressed "..xtraores.upper(name).." Block Stair",
+				"Compressed "..xtraores.upper(name).." Block Slab",
+				default.node_sound_stone_defaults()
+			)
+		end
 
-		stairs.register_stair_and_slab(name.."_block_chiseled", "xtraores:"..name.."_block_chiseled",
-			def.ore[3],
-			def.chiseled_block_tiles or {"xtraores_"..name.."_block_chiseled.png"},
-			"Chiseled "..xtraores.upper(name).." Block Stair",
-			"Chiseled "..xtraores.upper(name).." Block Slab",
-			default.node_sound_stone_defaults()
-		)
+		if def.chiseled_block ~= false then
+			stairs.register_stair_and_slab(name.."_block_chiseled", "xtraores:"..name.."_block_chiseled",
+				def.ore[3],
+				def.chiseled_block_tiles or {"xtraores_"..name.."_block_chiseled.png"},
+				"Chiseled "..xtraores.upper(name).." Block Stair",
+				"Chiseled "..xtraores.upper(name).." Block Slab",
+				default.node_sound_stone_defaults()
+			)
+		end
 
 		if minetest.global_exists("stairsplus") then
-			stairsplus:register_all("xtraores", name.."_block", "xtraores:"..name.."_block", {
-				description = xtraores.upper(name).. " Block",
-				tiles = def.block_tiles or {"xtraores_"..name.."_block.png"},
-				groups = def.ore[3],
-				sounds = default.node_sound_stone_defaults()
-			})
+			if def.brick ~= false then
+				stairsplus:register_all("xtraores", name.."_block", "xtraores:"..name.."_block", {
+					description = xtraores.upper(name).. " Block",
+					tiles = def.block_tiles or {"xtraores_"..name.."_block.png"},
+					groups = def.ore[3],
+					sounds = default.node_sound_stone_defaults()
+				})
+			end
 
-			stairsplus:register_all("xtraores", name.."_brick", "xtraores:"..name.."_brick", {
-				description = xtraores.upper(name).." Brick",
-				tiles = def.brick_tiles or {"xtraores_"..name.."_brick.png"},
-				groups = def.ore[3],
-				sounds = default.node_sound_stone_defaults()
-			})
+			if def.block ~= false then
+				stairsplus:register_all("xtraores", name.."_brick", "xtraores:"..name.."_brick", {
+					description = xtraores.upper(name).." Brick",
+					tiles = def.brick_tiles or {"xtraores_"..name.."_brick.png"},
+					groups = def.ore[3],
+					sounds = default.node_sound_stone_defaults()
+				})
+			end
 
-			stairsplus:register_all("xtraores", name.."_block_compressed", "xtraores:"..name.."_block_compressed", {
-				description = xtraores.upper(name).." Compressed Block",
-				tiles = def.compressed_block_tiles or {"xtraores_"..name.."_block_compressed.png"},
-				groups = def.ore[3],
-				sounds = default.node_sound_stone_defaults()
-			})
+			if def.compressed_block ~= false then
+				stairsplus:register_all("xtraores", name.."_block_compressed", "xtraores:"..name.."_block_compressed", {
+					description = xtraores.upper(name).." Compressed Block",
+					tiles = def.compressed_block_tiles or {"xtraores_"..name.."_block_compressed.png"},
+					groups = def.ore[3],
+					sounds = default.node_sound_stone_defaults()
+				})
+			end
 
-			stairsplus:register_all("xtraores", name.."_block_chiseled", "xtraores:"..name.."_block_chiseled", {
-				description = xtraores.upper(name).." Chiseled Block",
-				tiles = def.chiseled_block_tiles or {"xtraores_"..name.."_block_chiseled.png"},
-				groups = def.ore[3],
-				sounds = default.node_sound_stone_defaults()
-			})
+			if def.chiseled_block ~= false then
+				stairsplus:register_all("xtraores", name.."_block_chiseled", "xtraores:"..name.."_block_chiseled", {
+					description = xtraores.upper(name).." Chiseled Block",
+					tiles = def.chiseled_block_tiles or {"xtraores_"..name.."_block_chiseled.png"},
+					groups = def.ore[3],
+					sounds = default.node_sound_stone_defaults()
+				})
+			end
 		end
 	end
 
@@ -407,7 +423,7 @@ register_all("platinum", {
 	axe = {{choppy={times={[1]=2.20, [2]=1.00, [3]=0.60}, uses=15, maxlevel=3}}, 6},
 	sword = {{snappy={times={[1]=2.0, [2]=1.00, [3]=0.35}, uses=23, maxlevel=3}}, 7},
 	spear = {{snappy={times={[1]=2.0, [2]=1.00, [3]=0.35}, uses=23, maxlevel=3}}, 7},
-	ore = {7, -100, {cracky=2}},
+	ore = {10, -100, {cracky=2}},
 })
 
 register_all("cobalt", {
