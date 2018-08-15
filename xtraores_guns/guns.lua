@@ -87,7 +87,7 @@ local function register_gun(name, def)
 
 			if self.lastpos.x ~= nil then
 				if minetest.registered_nodes[node.name].walkable then
-					if not minetest.setting_getbool("creative_mode") then
+					if not minetest.settings:get_bool("creative_mode") then
 						minetest.add_item(self.lastpos, "")
 					end
 					minetest.sound_play("default_dig_cracky", {pos = self.lastpos, gain = 0.8})
