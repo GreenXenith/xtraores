@@ -23,8 +23,11 @@ local function register_gun(name, def)
 			local stack = "xtraores_guns:bullet_"..tostring(def.bullet_type).." 1"
 			local pos = user:getpos()
 			local dir = user:get_look_dir()
-			local yaw = user:get_look_yaw()
+			local yaw = user:get_look_horizontal()
 			if inv:contains_item("main", stack) then
+				if minetest.global_exists("awards") then
+					awards.notify_shot(user)
+				end
 				inv:remove_item("main", stack)
 				if pos and dir and yaw then
 					pos.y = pos.y + 1.6
@@ -346,6 +349,57 @@ minetest.register_craft({
 	}
 })
 
+if minetest.global_exists("awards") then
+	awards.register_trigger("shot", {
+		type = "counted",
+		progress = "@1/@2 shots fired",
+		auto_description = { "Shoot a shot", "Shoot @1 times" },
+	})
+
+	awards.register_award("xtraores_guns:first_shot",{
+		title = "First shot",
+		description = "Shoot a shot.",
+		icon = "bullet_308.png^awards_level1.png",
+		trigger = {
+			type = "shot",
+			target = 1
+		},
+		difficulty = 1,
+	})
+
+	awards.register_award("xtraores_guns:quick_draw",{
+		title = "Quickdraw",
+		description = "Shoot 200 shots.",
+		icon = "bullet_308.png^awards_level2.png",
+		trigger = {
+			type = "shot",
+			target = 200
+		},
+		difficulty = 2,
+	})
+
+	awards.register_award("xtraores_guns:trigger_happy",{
+		title = "Trigger-happy",
+		description = "Shoot 500 shots.",
+		icon = "bullet_308.png^awards_level3.png",
+		trigger = {
+			type = "shot",
+			target = 500
+		},
+		difficulty = 3,
+	})
+
+	awards.register_award("xtraores_guns:precious",{
+		title = "My precious",
+		description = "Craft the precious gun.",
+		icon = "gun_precious.png",
+		trigger = {
+			type = "craft",
+			item = "xtraores_guns:precious_gun",
+			target = 1
+		},
+	})
+end
 
 --Fire at Will!
 --*Will ducks*

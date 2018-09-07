@@ -1,6 +1,7 @@
 default
 tnt
 xtraores
+awards?
 technic?
 ethereal?
 caverealms?

@@ -122,7 +122,7 @@ if minetest.get_modpath("3d_armor") then
 		shield_groups = {armor_shield=16.4, armor_heal=12, physics_gravity=-0.15, physics_speed=0.15, physics_jump=0.15, armor_use=20},
 	})
 
-	register_armor("unobtanium", {
+	register_armor("unobtainium", {
 		helmet_groups = {armor_head=17, armor_heal=12, physics_gravity=-0.15, physics_speed=0.15, physics_jump=0.15, armor_fire=1, armor_use=20},
 		chestplate_groups = {armor_torso=22, armor_heal=12, physics_gravity=-0.15, physics_speed=0.15, physics_jump=0.15, armor_fire=1, armor_use=20},
 		leggings_groups = {armor_legs=22, armor_heal=12, physics_gravity=-0.15, physics_speed=0.15, physics_jump=0.15, armor_fire=1, armor_use=20},

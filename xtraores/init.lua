@@ -416,6 +416,37 @@ local function register_all(name, def)
 	end
 end
 
+--[[
+
+How to register a thing:
+
+(all inputs are optional)
+register_all("name", {
+	ore_tiles = {tiles},
+	brick_tiles = {tiles},
+	block_tiles = {tiles},
+	compressed_block_tiles = {tiles},
+	chiseled_block_tiles = {tiles},
+	block = false,
+	compressed_block = false,
+	chiseled_block = false,
+	brick = false,
+	stair = false,
+	dust = false,
+	lump = "lump description",
+	ingot = "ingot description",
+	pick = {group_caps, fleshy},
+	shovel = {group_caps, fleshy},
+	axe = {group_caps, fleshy},
+	sword = {group_caps, fleshy},
+	spear = {group_caps, fleshy},
+	drill = {group_caps, fleshy},
+	chainsaw = {group_caps, fleshy},
+	ore = {rarity, y_max, {groups}},
+})
+
+]]
+
 --Register the things
 register_all("platinum", {
 	pick = {{cracky = {times={[1]=2.4, [2]=1.2, [3]=0.60}, uses=15, maxlevel=3}}, 5},
@@ -463,7 +494,7 @@ register_all("rarium", {
 	ore = {25, -5000, {weryhard=1}},
 })
 
-register_all("unobtanium", {
+register_all("unobtainium", {
 	drill = {{cracky = {times={[1]=0.15, [2]=0.06, [3]=0.04}, uses=500, maxlevel=3}, weryhard = {times={[3]=0.25, [2]=0.50, [1]=0.75, [0]=1.00}, uses=500, maxlevel=3}, crumbly = {times={[1]=0.15, [2]=0.06, [3]=0.03}, uses=500, maxlevel=3}}, 12},
 	chainsaw = {{choppy={times={[1]=0.10, [2]=0.025, [3]=0.0075}, uses=500, maxlevel=3}}, 12},
 	sword = {{snappy={times={[1]=0.0125, [2]=0.05, [3]=0.006}, uses=500, maxlevel=3}}, 35},
@@ -494,37 +525,6 @@ register_all("geminitinum", {
 	ore = {30, -30000, {weryhard=0}},
 })
 
---[[
-
-How to register a thing:
-
-(all inputs are optional)
-register_all("name", {
-	ore_tiles = {tiles},
-	brick_tiles = {tiles},
-	block_tiles = {tiles},
-	compressed_block_tiles = {tiles},
-	chiseled_block_tiles = {tiles},
-	block = false,
-	compressed_block = false,
-	chiseled_block = false,
-	brick = false,
-	stair = false,
-	dust = false,
-	lump = "lump description",
-	ingot = "ingot description",
-	pick = {group_caps, fleshy},
-	shovel = {group_caps, fleshy},
-	axe = {group_caps, fleshy},
-	sword = {group_caps, fleshy},
-	spear = {group_caps, fleshy},
-	drill = {group_caps, fleshy},
-	chainsaw = {group_caps, fleshy},
-	ore = {rarity, y_max, {groups}},
-})
-
-]]
-
 --Extras that don't fit register_all
 minetest.register_tool("xtraores:sword_excalibur", {
 	description = "Excalibur | 75 dmg",
@@ -543,7 +543,7 @@ minetest.register_craft({
 	output = "xtraores:sword_excalibur",
 	recipe = {
 		{"xtraores:sword_osmium", "xtraores:sword_adamantite", "xtraores:sword_rarium"},
-		{"xtraores:sword_cobalt", "default:sword_diamond", "xtraores:sword_unobtanium"},
+		{"xtraores:sword_cobalt", "default:sword_diamond", "xtraores:sword_unobtainium"},
 		{"default:diamondblock", "default:mese", "default:diamondblock"},
 	}
 })
@@ -571,58 +571,10 @@ minetest.register_craft({
 	}
 })
 
---Change "osminum" to "osmium" (the correct name)
-local prefix = {
-	"stone_with",
-	"pick",
-	"shovel",
-	"axe",
-	"sword",
-	"spear",
-}
-
-local suffix = {
-	"brick",
-	"lump",
-	"bar",
-}
-
-local armor = {
-	"boots",
-	"leggings",
-	"chestplate",
-	"helmet",
-	"shield",
-}
-
-local materials = {
-	"platinum",
-	"cobalt",
-	"osmium",
-	"rarium",
-	"adamantite",
-	"unobtanium",
-	"titanium",
-	"geminitinum",
-}
-
-for _, name in pairs(prefix) do
-	minetest.register_alias("xtraores:"..name.."_osminum", "xtraores:"..name.."_osmium")
-end
-
-for _, name in pairs(suffix) do
-	minetest.register_alias("xtraores:".."osminum_"..name, "xtraores:".."osmium_"..name)
-end
-
-for _, name in pairs(armor) do
-	minetest.register_alias("xtraores_armor:"..name.."_osminum", "xtraores_armor:"..name.."_osmium")
-end
-
-for _, name in pairs(materials) do
-	minetest.register_alias("xtraores:"..name.."_bar", "xtraores:"..name.."_ingot")
+if minetest.global_exists("awards") then
+	dofile(minetest.get_modpath("xtraores").."/awards.lua")
 end
 
 minetest.log("action", "[MOD] Xtraores: Module (main) loaded!")
-
 
 --The original was 2000+ lines

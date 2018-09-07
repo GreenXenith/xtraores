@@ -59,6 +59,38 @@ minetest.register_craft({
 	}
 })
 
+if minetest.global_exists("awards") then
+	awards.register_award("xtraores_rainbow:skittles",{
+		title = "SKITTLES",
+		description = "Place a rainbow block.",
+		icon = minetest.inventorycube(
+			"xtraores_rainbow_block.png",
+			"xtraores_rainbow_block.png",
+			"xtraores_rainbow_block.png"
+		),
+		trigger = {
+			type = "place",
+			node = "xtraores_rainbow:rainbow",
+			target = 1
+		},
+	})
+
+	awards.register_award("xtraores_rainbow:glass_skittles",{
+		title = "See-through Skittles?",
+		description = "Place a rainbow glass block.",
+		icon = minetest.inventorycube(
+			"xtraores_window.png",
+			"xtraores_window.png",
+			"xtraores_window.png"
+		),
+		trigger = {
+			type = "place",
+			node = "xtraores_rainbow:glass",
+			target = 1
+		},
+	})
+end
+
 minetest.log("action", "[MOD] Xtraores: Module (rainbow) loaded!")
 
 
