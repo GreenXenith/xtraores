@@ -82,19 +82,19 @@ if minetest.get_modpath("3d_armor") then
 
 	--Register the armors (that's a lot of words)
 	register_armor("platinum", {
-		helmet_helmet_groups = {armor_head=12, armor_heal=7, armor_use=200},
-		chestplate_chestplate_groups = {armor_torso=17, armor_heal=7, armor_use=200},
-		leggings_leggings_groups = {armor_legs=17, armor_heal=7, armor_use=200},
-		boots_boots_groups = {armor_feet=12, armor_heal=7, armor_use=200},
-		shield_shield_groups = {armor_shield=12, armor_heal=7, armor_use=200},
+		helmet_groups = {armor_head=12, armor_heal=7, armor_use=200},
+		chestplate_groups = {armor_torso=17, armor_heal=7, armor_use=200},
+		leggings_groups = {armor_legs=17, armor_heal=7, armor_use=200},
+		boots_groups = {armor_feet=12, armor_heal=7, armor_use=200},
+		shield_groups = {armor_shield=12, armor_heal=7, armor_use=200},
 	})
 
 	register_armor("cobalt", {
-		helmet_helmet_groups = {armor_head=15, armor_heal=12, physics_speed=0.15, armor_use=75},
-		chestplate_chestplate_groups = {armor_torso=20, armor_heal=12, physics_speed=0.15, armor_use=75},
-		leggings_leggings_groups = {armor_legs=20, armor_heal=12, physics_speed=0.15, armor_use=75},
-		boots_boots_groups = {armor_feet=15, armor_heal=12, physics_speed=0.15, armor_use=75},
-		shield_shield_groups = {armor_shield=15, armor_heal=12, physics_speed=0.15, armor_use=75},
+		helmet_groups = {armor_head=15, armor_heal=12, physics_speed=0.15, armor_use=75},
+		chestplate_groups = {armor_torso=20, armor_heal=12, physics_speed=0.15, armor_use=75},
+		leggings_groups = {armor_legs=20, armor_heal=12, physics_speed=0.15, armor_use=75},
+		boots_groups = {armor_feet=15, armor_heal=12, physics_speed=0.15, armor_use=75},
+		shield_groups = {armor_shield=15, armor_heal=12, physics_speed=0.15, armor_use=75},
 	})
 
 	register_armor("osmium", {
