@@ -466,7 +466,10 @@ register_all("name", {
 register_all("platinum", {
 	pick = {{cracky = {times={[1]=2.4, [2]=1.2, [3]=0.60}, uses=15, maxlevel=3}}, 5},
 	shovel = {{crumbly = {times={[1]=1.20, [2]=0.60, [3]=0.30}, uses=15, maxlevel=3}}, 4},
-	axe = {{choppy={times={[1]=2.20, [2]=1.00, [3]=0.60}, uses=15, maxlevel=3}}, 6},
+	axe = {{
+			choppy={times={[1]=2.20, [2]=1.00, [3]=0.60}, uses=15, maxlevel=3},
+			snappy={times={[1]=2.0, [2]=1.00, [3]=0.35}, uses=15, maxlevel=3},
+	}, 6},
 	sword = {{snappy={times={[1]=2.0, [2]=1.00, [3]=0.35}, uses=23, maxlevel=3}}, 7},
 	spear = {{snappy={times={[1]=2.0, [2]=1.00, [3]=0.35}, uses=23, maxlevel=3}}, 7},
 	ore = {10, -100, {cracky=2}},
@@ -475,7 +478,10 @@ register_all("platinum", {
 register_all("cobalt", {
 	pick = {{cracky = {times={[1]=1.5, [2]=0.85, [3]=0.40}, uses=60, maxlevel=3}, weryhard = {times={[3]=3.00}, uses=60, maxlevel=3}}, 8},
 	shovel = {{crumbly = {times={[1]=0.90, [2]=0.40, [3]=0.20}, uses=60, maxlevel=3}}, 7},
-	axe = {{choppy={times={[1]=1.80, [2]=0.70, [3]=0.30}, uses=60, maxlevel=3}}, 9},
+	axe = {{
+			choppy={times={[1]=1.80, [2]=0.70, [3]=0.30}, uses=60, maxlevel=3},
+			snappy={times={[1]=1.50, [2]=0.70, [3]=0.20}, uses=50, maxlevel=3},
+	}, 9},
 	sword = {{snappy={times={[1]=1.50, [2]=0.70, [3]=0.20}, uses=70, maxlevel=3}}, 10},
 	spear = {{snappy={times={[1]=2.0, [2]=1.00, [3]=0.35}, uses=23, maxlevel=3}}, 10},
 	ore = {12, -650, {cracky=1}},
@@ -485,7 +491,10 @@ register_all("osmium", {
 	lump = "Osmium Crystal",
 	pick = {{cracky = {times={[1]=1.2, [2]=0.70, [3]=0.30}, uses=100, maxlevel=3}, weryhard = {times={[3]=2.00, [2]=3.00}, uses=100, maxlevel=3}}, 13},
 	shovel = {{crumbly = {times={[1]=0.60, [2]=0.25, [3]=0.15}, uses=100, maxlevel=3}}, 12},
-	axe = {{choppy={times={[1]=1.20, [2]=0.40, [3]=0.15}, uses=100, maxlevel=3}}, 14},
+	axe = {{
+		choppy={times={[1]=1.20, [2]=0.40, [3]=0.15}, uses=100, maxlevel=3},
+		snappy={times={[1]=1.0, [2]=0.40, [3]=0.10}, uses=75, maxlevel=3},
+	}, 14},
 	sword = {{snappy={times={[1]=1.0, [2]=0.40, [3]=0.10}, uses=100, maxlevel=3}}, 15},
 	spear = {{snappy={times={[1]=2.0, [2]=1.00, [3]=0.35}, uses=23, maxlevel=3}}, 15},
 	ore = {15, -1000, {weryhard=3}},
@@ -495,7 +504,10 @@ register_all("adamantite", {
 	lump = "Adamantite Crystal",
 	pick = {{cracky = {times={[1]=0.6, [2]=0.35, [3]=0.15}, uses=200, maxlevel=3}, weryhard = {times={[3]=1.00, [2]=2.00, [1]=3.00}, uses=200, maxlevel=3}}, 18},
 	shovel = {{crumbly = {times={[1]=0.30, [2]=0.125, [3]=0.075}, uses=200, maxlevel=3}}, 17},
-	chainsaw = {{choppy={times={[1]=0.40, [2]=0.10, [3]=0.03}, uses=200, maxlevel=3}}, 5},
+	chainsaw = {{
+		choppy={times={[1]=0.40, [2]=0.10, [3]=0.03}, uses=200, maxlevel=3},
+		snappy={times={[1]=0.5, [2]=0.20, [3]=0.05}, uses=130, maxlevel=3},
+	}, 5},
 	sword = {{snappy={times={[1]=0.5, [2]=0.20, [3]=0.05}, uses=200, maxlevel=3}}, 20},
 	spear = {{snappy={times={[1]=2.0, [2]=1.00, [3]=0.35}, uses=23, maxlevel=3}}, 20},
 	ore = {20, -2000, {weryhard=2}},
@@ -503,7 +515,10 @@ register_all("adamantite", {
 
 register_all("rarium", {
 	drill = {{cracky = {times={[1]=0.3, [2]=0.125, [3]=0.075}, uses=350, maxlevel=3}, weryhard = {times={[3]=0.50, [2]=1.00, [1]=1.50, [0]=2.00}, uses=350, maxlevel=3}, crumbly = {times={[1]=0.15, [2]=0.06, [3]=0.03}, uses=350, maxlevel=3}}, 8},
-	chainsaw = {{choppy={times={[1]=0.20, [2]=0.05, [3]=0.015}, uses=350, maxlevel=3}}, 8},
+	chainsaw = {{
+		choppy={times={[1]=0.20, [2]=0.05, [3]=0.015}, uses=350, maxlevel=3},
+		snappy={times={[1]=0.25, [2]=0.10, [3]=0.025}, uses=260, maxlevel=3},
+	}, 8},
 	sword = {{snappy={times={[1]=0.25, [2]=0.10, [3]=0.025}, uses=350, maxlevel=3}}, 30},
 	spear = {{snappy={times={[1]=2.0, [2]=1.00, [3]=0.35}, uses=23, maxlevel=3}}, 30},
 	ore = {25, -5000, {weryhard=1}},
@@ -511,7 +526,10 @@ register_all("rarium", {
 
 register_all("unobtainium", {
 	drill = {{cracky = {times={[1]=0.15, [2]=0.06, [3]=0.04}, uses=500, maxlevel=3}, weryhard = {times={[3]=0.25, [2]=0.50, [1]=0.75, [0]=1.00}, uses=500, maxlevel=3}, crumbly = {times={[1]=0.15, [2]=0.06, [3]=0.03}, uses=500, maxlevel=3}}, 12},
-	chainsaw = {{choppy={times={[1]=0.10, [2]=0.025, [3]=0.0075}, uses=500, maxlevel=3}}, 12},
+	chainsaw = {{
+		choppy={times={[1]=0.10, [2]=0.025, [3]=0.0075}, uses=500, maxlevel=3},
+		snappy={times={[1]=0.0125, [2]=0.05, [3]=0.006}, uses=320, maxlevel=3},
+	}, 12},
 	sword = {{snappy={times={[1]=0.0125, [2]=0.05, [3]=0.006}, uses=500, maxlevel=3}}, 35},
 	spear = {{snappy={times={[1]=2.0, [2]=1.00, [3]=0.35}, uses=23, maxlevel=3}}, 35},
 	ore = {30, -10000, {weryhard=0}},
@@ -519,7 +537,10 @@ register_all("unobtainium", {
 
 register_all("titanium", {
 	drill = {{cracky = {times={[1]=0.10, [2]=0.04, [3]=0.02}, uses=650, maxlevel=3}, weryhard = {times={[3]=0.10, [2]=0.20, [1]=0.60, [0]=0.80}, uses=650, maxlevel=3}, crumbly = {times={[1]=0.10, [2]=0.04, [3]=0.02}, uses=650, maxlevel=3}}, 15},
-	chainsaw = {{choppy={times={[1]=0.075, [2]=0.020, [3]=0.005}, uses=650, maxlevel=3}}, 15},
+	chainsaw = {{
+		choppy={times={[1]=0.075, [2]=0.020, [3]=0.005}, uses=650, maxlevel=3},
+		snappy={times={[1]=0.0125, [2]=0.05, [3]=0.006}, uses=500, maxlevel=3},
+	}, 15},
 	sword = {{snappy={times={[1]=0.0125, [2]=0.05, [3]=0.006}, uses=650, maxlevel=3}}, 40},
 	spear = {{snappy={times={[1]=2.0, [2]=1.00, [3]=0.35}, uses=23, maxlevel=3}}, 40},
 	ore = {30, -20000, {weryhard=0}},
@@ -534,7 +555,10 @@ register_all("geminitinum", {
 	chiseled_block = false,
 	dust = false,
 	drill = {{cracky = {times={[1]=0.01, [2]=0.01, [3]=0.01}, uses=1000, maxlevel=3}, weryhard = {times={[3]=0.01, [2]=0.01, [1]=0.01, [0]=0.01}, uses=1000, maxlevel=3}, crumbly = {times={[1]=0.01, [2]=0.01, [3]=0.01}, uses=1000, maxlevel=3}}, 20},
-	chainsaw = {{choppy={times={[1]=0.001, [2]=0.001, [3]=0.001}, uses=1000, maxlevel=3}}, 20},
+	chainsaw = {{
+		choppy={times={[1]=0.001, [2]=0.001, [3]=0.001}, uses=1000, maxlevel=3},
+		snappy={times={[1]=0.01, [2]=0.03, [3]=0.002}, uses=750, maxlevel=3},
+	}, 20},
 	sword = {{snappy={times={[1]=0.01, [2]=0.03, [3]=0.002}, uses=1000, maxlevel=3}}, 20},
 	spear = {{snappy={times={[1]=2.0, [2]=1.00, [3]=0.35}, uses=23, maxlevel=3}}, 50},
 	ore = {30, -30000, {weryhard=0}},
