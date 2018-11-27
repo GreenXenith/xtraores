@@ -315,14 +315,17 @@ if minetest.get_modpath("technic") then
 		end
 	end
 
-	minetest.register_craft({
-		output = "xtraores_guns:mv_bullet_press",
-		recipe = {
-			{"mesecons_pistons:piston_normal_off", "technic:motor", "mesecons_pistons:piston_normal_off"},
-			{"pipeworks:tube_1", "technic:machine_casing", "pipeworks:tube_1"},
-			{"technic:fine_copper_wire", "technic:mv_cable", "technic:fine_copper_wire"},
-		}
-	})
+	-- This is needed for the motor
+	if minetest.get_modpath("basic_materials") then
+		minetest.register_craft({
+			output = "xtraores_guns:mv_bullet_press",
+			recipe = {
+				{"mesecons_pistons:piston_normal_off", "basic_materials:motor", "mesecons_pistons:piston_normal_off"},
+				{"pipeworks:tube_1", "technic:machine_casing", "pipeworks:tube_1"},
+				{"technic:fine_copper_wire", "technic:mv_cable", "technic:fine_copper_wire"},
+			}
+		})
+	end
 
 	technic.register_bullet_press({
 		typename = "press",

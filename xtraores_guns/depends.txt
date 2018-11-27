@@ -7,3 +7,4 @@ ethereal?
 caverealms?
 pipeworks?
 homedecor?
+basic_materials?
