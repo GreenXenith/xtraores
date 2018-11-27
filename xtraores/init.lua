@@ -8,6 +8,25 @@ function xtraores.upper(str)
     return (str:gsub("^%l", string.upper))
 end
 
+function xtraores.register_stairs(subname, recipeitem, groups, images, desc, sounds)
+	if stairs.mod and stairs.mod == "redo" then
+		stairs.register_all(subname, recipeitem,
+			groups,
+			images,
+			desc,
+			sounds
+		)
+	else
+		stairs.register_stair_and_slab(subname, recipeitem,
+			groups,
+			images,
+			desc.." Stair",
+			desc.." Slab",
+			sounds
+		)
+	end	
+end
+
 --Registration function to register all items/blocks for specified ore
 local function register_all(name, def)
 	if def.ore then
@@ -143,41 +162,37 @@ local function register_all(name, def)
 
 	if def.stair ~= false then
 		if def.brick ~= false then
-			stairs.register_stair_and_slab(name.."_brick", "xtraores:"..name.."_brick",
+			xtraores.register_stairs(name.."_brick", "xtraores:"..name.."_brick",
 				def.ore[3],
 				def.brick_tiles or {"xtraores_"..name.."_brick.png"},
-				xtraores.upper(name).." Brick Stair",
-				xtraores.upper(name).." Brick Slab",
+				xtraores.upper(name).." Brick",
 				default.node_sound_stone_defaults()
 			)
 		end
 
 		if def.block ~= false then
-			stairs.register_stair_and_slab(name.."_block", "xtraores:"..name.."_block",
+			xtraores.register_stairs(name.."_block", "xtraores:"..name.."_block",
 				def.ore[3],
 				def.block_tiles or {"xtraores_"..name.."_block.png"},
-				xtraores.upper(name).." Block Stair",
-				xtraores.upper(name).." Block Slab",
+				xtraores.upper(name).." Block",
 				default.node_sound_stone_defaults()
 			)
 		end
 
 		if def.compressed_block ~= false then
-			stairs.register_stair_and_slab(name.."_block_compressed", "xtraores:"..name.."_block_compressed",
+			xtraores.register_stairs(name.."_block_compressed", "xtraores:"..name.."_block_compressed",
 				def.ore[3],
 				def.compressed_block_tiles or {"xtraores_"..name.."_block_compressed.png"},
-				"Compressed "..xtraores.upper(name).." Block Stair",
-				"Compressed "..xtraores.upper(name).." Block Slab",
+				"Compressed "..xtraores.upper(name).." Block",
 				default.node_sound_stone_defaults()
 			)
 		end
 
 		if def.chiseled_block ~= false then
-			stairs.register_stair_and_slab(name.."_block_chiseled", "xtraores:"..name.."_block_chiseled",
+			xtraores.register_stairs(name.."_block_chiseled", "xtraores:"..name.."_block_chiseled",
 				def.ore[3],
 				def.chiseled_block_tiles or {"xtraores_"..name.."_block_chiseled.png"},
-				"Chiseled "..xtraores.upper(name).." Block Stair",
-				"Chiseled "..xtraores.upper(name).." Block Slab",
+				"Chiseled "..xtraores.upper(name).." Block",
 				default.node_sound_stone_defaults()
 			)
 		end

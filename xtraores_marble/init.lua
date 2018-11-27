@@ -86,28 +86,25 @@ local function register_marble(name, def)
 		}
 	})
 
-	stairs.register_stair_and_slab(name.."marble", "xtraores_marble:"..name.."marble",
+	xtraores.register_stairs(name.."marble", "xtraores_marble:"..name.."marble",
 		{cracky = 3},
 		{"xtraores_"..name.."marble.png"},
-		desc.."Marble Stair",
-		desc.."Marble Slab",
+		desc.."Marble",
 		default.node_sound_stone_defaults()
 	)
 
-	stairs.register_stair_and_slab(name.."marble_polished", "xtraores_marble:"..name.."marble_polished",
+	xtraores.register_stairs(name.."marble_polished", "xtraores_marble:"..name.."marble_polished",
 		{cracky = 3},
 		{"xtraores_"..name.."marble_polished.png"},
-		"Polished "..desc.."Marble Stair",
-		"Polished "..desc.."Marble Slab",
+		"Polished "..desc.."Marble",
 
 		default.node_sound_stone_defaults()
 	)
 
-	stairs.register_stair_and_slab(name.."marble_bricks", "xtraores_marble:"..name.."marble_bricks",
+	xtraores.register_stairs(name.."marble_bricks", "xtraores_marble:"..name.."marble_bricks",
 		{cracky = 3},
 		{"xtraores_"..name.."marble_bricks.png"},
-		desc.."Marble Brick Stair",
-		desc.."Marble Brick Slab",
+		desc.."Marble Brick",
 		default.node_sound_stone_defaults()
 	)
 
