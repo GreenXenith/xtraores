@@ -2,38 +2,54 @@
 if minetest.get_modpath("3d_armor") then
 	--Armor registration function
 	local function register_armor(name, def)
+		local function get_groups(type, offset)
+			if not offset then
+				offset = 0
+			end
+			local groups = {
+				["armor_"..type] = def.armor+offset,
+				armor_use = def.use,
+				armor_heal = def.heal or 0,
+				armor_fire = def.fire or 0,
+				physics_gravity = def.gravity or 1,
+				physics_speed = def.speed or 1,
+				physics_jump = def.jump or 1,
+			}
+			return groups
+		end
+
 		armor:register_armor("xtraores_armor:helmet_"..name, {
 			description = xtraores.upper(name).." Helmet",
 			inventory_image = "xtraores_armor_inv_helmet_"..name..".png",
-			groups = def.helmet_groups,
+			groups = get_groups("head"),
 			wear = 0,
 		})
 
 		armor:register_armor("xtraores_armor:chestplate_"..name, {
 			description = xtraores.upper(name).." Chestplate",
 			inventory_image = "xtraores_armor_inv_chestplate_"..name..".png",
-			groups = def.chestplate_groups,
+			groups = get_groups("torso", 5),
 			wear = 0,
 		})
 
 		armor:register_armor("xtraores_armor:leggings_"..name, {
 			description = xtraores.upper(name).." Leggings",
 			inventory_image = "xtraores_armor_inv_leggings_"..name..".png",
-			groups = def.leggings_groups,
+			groups = get_groups("legs", 5),
 			wear = 0,
 		})
 
 		armor:register_armor("xtraores_armor:boots_"..name, {
 			description = xtraores.upper(name).." Boots",
 			inventory_image = "xtraores_armor_inv_boots_"..name..".png",
-			groups = def.boots_groups,
+			groups = get_groups("feet"),
 			wear = 0,
 		})
 
 		armor:register_armor("xtraores_armor:shield_"..name, {
 			description = xtraores.upper(name).." Shield",
 			inventory_image = "xtraores_armor_inv_shield_"..name..".png",
-			groups = def.shield_groups,
+			groups = get_groups("shield"),
 			wear = 0,
 		})
 
@@ -80,62 +96,61 @@ if minetest.get_modpath("3d_armor") then
 		})
 	end
 
-	--Register the armors (that's a lot of words)
+	--Register the armors
 	register_armor("platinum", {
-		helmet_groups = {armor_head=12, armor_heal=7, armor_use=200},
-		chestplate_groups = {armor_torso=17, armor_heal=7, armor_use=200},
-		leggings_groups = {armor_legs=17, armor_heal=7, armor_use=200},
-		boots_groups = {armor_feet=12, armor_heal=7, armor_use=200},
-		shield_groups = {armor_shield=12, armor_heal=7, armor_use=200},
+		armor = 12,
+		heal = 7,
+		use = 200,
 	})
 
 	register_armor("cobalt", {
-		helmet_groups = {armor_head=15, armor_heal=12, physics_speed=0.15, armor_use=75},
-		chestplate_groups = {armor_torso=20, armor_heal=12, physics_speed=0.15, armor_use=75},
-		leggings_groups = {armor_legs=20, armor_heal=12, physics_speed=0.15, armor_use=75},
-		boots_groups = {armor_feet=15, armor_heal=12, physics_speed=0.15, armor_use=75},
-		shield_groups = {armor_shield=15, armor_heal=12, physics_speed=0.15, armor_use=75},
+		armor = 15,
+		heal = 12,
+		speed = 0.15,
+		use = 75,
 	})
 
 	register_armor("osmium", {
-		helmet_groups = {armor_head=15.4, armor_heal=12, physics_jump=0.15, armor_use=50},
-		chestplate_groups = {armor_torso=20.4, armor_heal=12, physics_jump=0.15, armor_use=50},
-		leggings_groups = {armor_legs=20.4, armor_heal=12, physics_jump=0.15, armor_use=50},
-		boots_groups = {armor_feet=15.4, armor_heal=12, physics_jump=0.15, armor_use=50},
-		shield_groups = {armor_shield=15.4, armor_heal=12, physics_jump=0.15, armor_use=50},
-
+		armor = 15.4,
+		heal = 12,
+		jump = 0.15,
+		armor_use = 50,
 	})
 
 	register_armor("adamantite", {
-		helmet_groups = {armor_head=16, armor_heal=12, physics_gravity=-0.15, armor_use=30},
-		chestplate_groups = {armor_torso=21, armor_heal=12, physics_gravity=-0.15, armor_use=30},
-		leggings_groups = {armor_legs=21, armor_heal=12, physics_gravity=-0.15, armor_use=30},
-		boots_groups = {armor_feet=16, armor_heal=12, physics_gravity=-0.15, armor_use=30},
-		shield_groups = {armor_shield=16, armor_heal=12, physics_gravity=-0.15, armor_use=75},
+		armor = 16,
+		heal = 12,
+		gravity = -0.15,
+		armor_use = 30,
 	})
 
 	register_armor("rarium", {
-		helmet_groups = {armor_head=16.4, armor_heal=12, physics_gravity=-0.15, physics_speed=0.15, physics_jump=0.15, armor_use=20},
-		chestplate_groups = {armor_torso=21.4, armor_heal=12, physics_gravity=-0.15, physics_speed=0.15, physics_jump=0.15, armor_use=20},
-		leggings_groups = {armor_legs=21.4, armor_heal=12, physics_gravity=-0.15, physics_speed=0.15, physics_jump=0.15, armor_use=20},
-		boots_groups = {armor_feet=16.4, armor_heal=12, physics_gravity=-0.15, physics_speed=0.15, physics_jump=0.15, armor_use=20},
-		shield_groups = {armor_shield=16.4, armor_heal=12, physics_gravity=-0.15, physics_speed=0.15, physics_jump=0.15, armor_use=20},
+		armor = 16.4,
+		heal = 12,
+		gravity = -0.15,
+		speed = 0.15,
+		jump = 0.15,
+		use = 20,
 	})
 
 	register_armor("unobtainium", {
-		helmet_groups = {armor_head=17, armor_heal=12, physics_gravity=-0.15, physics_speed=0.15, physics_jump=0.15, armor_fire=1, armor_use=20},
-		chestplate_groups = {armor_torso=22, armor_heal=12, physics_gravity=-0.15, physics_speed=0.15, physics_jump=0.15, armor_fire=1, armor_use=20},
-		leggings_groups = {armor_legs=22, armor_heal=12, physics_gravity=-0.15, physics_speed=0.15, physics_jump=0.15, armor_fire=1, armor_use=20},
-		boots_groups = {armor_feet=17, armor_heal=12, physics_gravity=-0.15, physics_speed=0.15, physics_jump=0.15, armor_fire=1, armor_use=20},
-		shield_groups = {armor_shield=17, armor_heal=12, physics_gravity=-0.15, physics_speed=0.15, physics_jump=0.15, armor_fire=1, armor_use=20},
+		armor = 17,
+		heal = 12,
+		gravity = -0.15,
+		speed = 0.15,
+		jump = 0.15,
+		fire = 1,
+		use = 20,
 	})
 
 	register_armor("titanium", {
-		helmet_groups = {armor_head=17.6, armor_heal=14, physics_gravity=-0.18, physics_speed=0.25, physics_jump=0.16, armor_fire=1, armor_use=20},
-		chestplate_groups = {armor_torso=22.6, armor_heal=14, physics_gravity=-0.18, physics_speed=0.25, physics_jump=0.16, armor_fire=1, armor_use=20},
-		leggings_groups = {armor_legs=22.6, armor_heal=14, physics_gravity=-0.18, physics_speed=0.25, physics_jump=0.16, armor_fire=1, armor_use=20},
-		boots_groups = {armor_feet=17.6, armor_heal=14, physics_gravity=-0.18, physics_speed=0.25, physics_jump=0.16, armor_fire=1, armor_use=20},
-		shield_groups = {armor_shield=17.6, armor_heal=14, physics_gravity=-0.18, physics_speed=0.25, physics_jump=0.16, armor_fire=1, armor_use=20},
+		armor = 17.6,
+		heal = 14,
+		gravity = -0.18,
+		speed = 0.25,
+		jump = 0.16,
+		fire = 1,
+		use = 20,
 	})
 
 	minetest.log("action", "[MOD] Xtraores: Module (armor) loaded!")
