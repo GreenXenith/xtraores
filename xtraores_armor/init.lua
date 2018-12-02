@@ -9,11 +9,11 @@ if minetest.get_modpath("3d_armor") then
 			local groups = {
 				["armor_"..type] = def.armor+offset,
 				armor_use = def.use,
-				armor_heal = def.heal or 0,
-				armor_fire = def.fire or 0,
-				physics_gravity = def.gravity or 1,
-				physics_speed = def.speed or 1,
-				physics_jump = def.jump or 1,
+				armor_heal = def.heal or nil,
+				armor_fire = def.fire or nil,
+				physics_gravity = def.gravity or nil,
+				physics_speed = def.speed or nil,
+				physics_jump = def.jump or nil,
 			}
 			return groups
 		end
