@@ -248,6 +248,7 @@ local function register_all(name, def)
 
 	minetest.register_craft({
 		type = "cooking",
+		cooktime = def.cooktime or nil,
 		output = "xtraores:"..name.."_ingot",
 		recipe = "xtraores:"..name.."_lump",
 	})
@@ -548,6 +549,7 @@ register_all("titanium", {
 
 register_all("geminitinum", {
 	lump = "Geminitinum Crystal",
+	cooktime = 200,
 	ore_tiles = {{name="xtraores_mineral_geminitinum.png", animation={type="vertical_frames", aspect_w=16, aspect_h=16, length=2.0}}},
 	brick_tiles = {{name="xtraores_geminitinum_brick.png", animation={type="vertical_frames", aspect_w=16, aspect_h=16, length=1}}},
 	block_tiles = {{name="xtraores_geminitinum_block.png", animation={type="vertical_frames", aspect_w=16, aspect_h=16, length=1}}},
