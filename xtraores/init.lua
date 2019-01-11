@@ -9,7 +9,11 @@ function xtraores.upper(str)
 end
 
 function xtraores.register_stairs(subname, recipeitem, groups, images, desc, sounds)
-	if stairs.mod and stairs.mod == "redo" then
+	if minetest.global_exists("stairsplus") then
+		-- Unregister stairs because moreblocks already provides them
+		minetest.unregister_item("stairs:stair_"..subname)
+		minetest.unregister_item("stairs:slab_"..subname)
+	elseif stairs.mod and stairs.mod == "redo" then
 		stairs.register_all(subname, recipeitem,
 			groups,
 			images,
