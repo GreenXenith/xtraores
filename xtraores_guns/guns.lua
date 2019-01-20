@@ -121,7 +121,7 @@ register_gun("name", {
 --Register the guns
 register_gun("titanium", {
 	damage = 70,
-	speed = 280,
+	speed = 100,
 	bullet_type = 308,
 	visual_size = 0.075,
 	visual_type = "normal",
@@ -130,7 +130,7 @@ register_gun("titanium", {
 
 register_gun("precious", {
 	damage = 95,
-	speed = 280,
+	speed = 100,
 	bullet_type = 308,
 	visual_size = 0.075,
 	visual_type = "normal",
@@ -158,7 +158,7 @@ register_gun("rainbow", {
 register_gun("deagle", {
 	description = "Desert Eagle",
 	damage = 45,
-	speed = 280,
+	speed = 100,
 	bullet_type = 357,
 	visual_size = 0.075,
 	visual_type = "normal",
