@@ -69,7 +69,7 @@ local function register_gun(name, def)
 					if obj:get_luaentity() ~= nil then
 						if obj:get_luaentity().name ~= "xtraores_guns:"..string.sub(name, 1, 1).."b" and obj:get_luaentity().name ~= "__builtin:item" then
 							local damage = def.damage
-							obj:punch(self.object, 1.0, {
+							obj:punch(self.player, 1.0, {
 								full_punch_interval = 1.0,
 								damage_groups= {fleshy = damage},
 							}, nil)
@@ -78,7 +78,7 @@ local function register_gun(name, def)
 						end
 					else
 						local damage = def.damage
-						obj:punch(self.object, 1.0, {
+						obj:punch(self.player, 1.0, {
 							full_punch_interval = 1.0,
 							damage_groups= {fleshy = damage},
 						}, nil)
