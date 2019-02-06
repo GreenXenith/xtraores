@@ -477,7 +477,7 @@ register_all("platinum", {
 	}, 6},
 	sword = {{snappy={times={[1]=2.0, [2]=1.00, [3]=0.35}, uses=23, maxlevel=3}}, 7},
 	spear = {{snappy={times={[1]=2.0, [2]=1.00, [3]=0.35}, uses=23, maxlevel=3}}, 7},
-	ore = {10, -100, {cracky=2}},
+	ore = {5, -100, {cracky=2}},
 })
 
 register_all("cobalt", {
@@ -489,7 +489,7 @@ register_all("cobalt", {
 	}, 9},
 	sword = {{snappy={times={[1]=1.50, [2]=0.70, [3]=0.20}, uses=70, maxlevel=3}}, 10},
 	spear = {{snappy={times={[1]=2.0, [2]=1.00, [3]=0.35}, uses=23, maxlevel=3}}, 10},
-	ore = {12, -650, {cracky=1}},
+	ore = {10, -1000, {cracky=1}},
 })
 
 register_all("osmium", {
@@ -502,7 +502,7 @@ register_all("osmium", {
 	}, 14},
 	sword = {{snappy={times={[1]=1.0, [2]=0.40, [3]=0.10}, uses=100, maxlevel=3}}, 15},
 	spear = {{snappy={times={[1]=2.0, [2]=1.00, [3]=0.35}, uses=23, maxlevel=3}}, 15},
-	ore = {15, -1000, {weryhard=3}},
+	ore = {15, -2000, {weryhard=3}},
 })
 
 register_all("adamantite", {
@@ -515,7 +515,7 @@ register_all("adamantite", {
 	}, 5},
 	sword = {{snappy={times={[1]=0.5, [2]=0.20, [3]=0.05}, uses=200, maxlevel=3}}, 20},
 	spear = {{snappy={times={[1]=2.0, [2]=1.00, [3]=0.35}, uses=23, maxlevel=3}}, 20},
-	ore = {20, -2000, {weryhard=2}},
+	ore = {20, -5000, {weryhard=2}},
 })
 
 register_all("rarium", {
@@ -526,7 +526,7 @@ register_all("rarium", {
 	}, 8},
 	sword = {{snappy={times={[1]=0.25, [2]=0.10, [3]=0.025}, uses=350, maxlevel=3}}, 30},
 	spear = {{snappy={times={[1]=2.0, [2]=1.00, [3]=0.35}, uses=23, maxlevel=3}}, 30},
-	ore = {25, -5000, {weryhard=1}},
+	ore = {25, -10000, {weryhard=1}},
 })
 
 register_all("unobtainium", {
@@ -537,7 +537,7 @@ register_all("unobtainium", {
 	}, 12},
 	sword = {{snappy={times={[1]=0.0125, [2]=0.05, [3]=0.006}, uses=500, maxlevel=3}}, 35},
 	spear = {{snappy={times={[1]=2.0, [2]=1.00, [3]=0.35}, uses=23, maxlevel=3}}, 35},
-	ore = {30, -10000, {weryhard=0}},
+	ore = {30, -15000, {weryhard=0}},
 })
 
 register_all("titanium", {
@@ -548,7 +548,7 @@ register_all("titanium", {
 	}, 15},
 	sword = {{snappy={times={[1]=0.0125, [2]=0.05, [3]=0.006}, uses=650, maxlevel=3}}, 40},
 	spear = {{snappy={times={[1]=2.0, [2]=1.00, [3]=0.35}, uses=23, maxlevel=3}}, 40},
-	ore = {30, -20000, {weryhard=0}},
+	ore = {30, -25000, {weryhard=0}},
 })
 
 register_all("geminitinum", {
@@ -567,7 +567,7 @@ register_all("geminitinum", {
 	}, 20},
 	sword = {{snappy={times={[1]=0.01, [2]=0.03, [3]=0.002}, uses=1000, maxlevel=3}}, 20},
 	spear = {{snappy={times={[1]=2.0, [2]=1.00, [3]=0.35}, uses=23, maxlevel=3}}, 50},
-	ore = {30, -30000, {weryhard=0}},
+	ore = {35, -32000, {weryhard=0}},
 })
 
 --Extras that don't fit register_all
