@@ -31,7 +31,7 @@ local function register_gun(name, def)
 				inv:remove_item("main", stack)
 				if pos and dir and yaw then
 					pos.y = pos.y + 1.6
-					local obj = minetest.add_entity(pos, "xtraores_guns:"..string.sub(name, 1, 1).."b")
+					local obj = minetest.add_entity(pos, "xtraores_guns:"..string.sub(name, 1, 1))
 					if obj then
 						minetest.sound_play("shot_"..def.sound, {object=obj, gain=0.2})
 						obj:setvelocity({x=dir.x * def.speed, y=dir.y * def.speed, z=dir.z * def.speed})
@@ -39,7 +39,7 @@ local function register_gun(name, def)
 						obj:setyaw(yaw + math.pi)
 						local ent = obj:get_luaentity()
 						if ent then
-							ent.player = ent.player or user
+							ent.player = ent.player or user:get_player_name()
 						end
 					end
 				end
@@ -50,7 +50,7 @@ local function register_gun(name, def)
 		end,
 	})
 
-	minetest.register_entity("xtraores_guns:"..string.sub(name, 1, 1).."b", {
+	minetest.register_entity("xtraores_guns:"..string.sub(name, 1, 1), {
 		physical = false,
 		timer = 0,
 		visual = "sprite",
@@ -66,10 +66,14 @@ local function register_gun(name, def)
 			if self.timer > 0.06 then
 				local objs = minetest.get_objects_inside_radius({x = pos.x, y = pos.y, z = pos.z}, 2)
 				for k, obj in pairs(objs) do
+					if not self.player or not minetest.get_player_by_name(self.player) then
+						return
+					end
+					local player = minetest.get_player_by_name(self.player)
 					if obj:get_luaentity() ~= nil then
-						if obj:get_luaentity().name ~= "xtraores_guns:"..string.sub(name, 1, 1).."b" and obj:get_luaentity().name ~= "__builtin:item" then
+						if obj:get_luaentity().name ~= "xtraores_guns:"..string.sub(name, 1, 1) and obj:get_luaentity().name ~= "__builtin:item" then
 							local damage = def.damage
-							obj:punch(self.player, 1.0, {
+							obj:punch(player, 1.0, {
 								full_punch_interval = 1.0,
 								damage_groups= {fleshy = damage},
 							}, nil)
@@ -78,7 +82,7 @@ local function register_gun(name, def)
 						end
 					else
 						local damage = def.damage
-						obj:punch(self.player, 1.0, {
+						obj:punch(player, 1.0, {
 							full_punch_interval = 1.0,
 							damage_groups= {fleshy = damage},
 						}, nil)
@@ -97,7 +101,12 @@ local function register_gun(name, def)
 					self.object:remove()
 				end
 			end
+
 			self.lastpos= {x = pos.x, y = pos.y, z = pos.z}
+
+			if self.timer > 1000 then
+				self.object:remove()
+			end
 		end
 	})
 end
@@ -156,7 +165,7 @@ register_gun("rainbow", {
 })
 
 register_gun("deagle", {
-	description = "Desert Eagle",
+	desc = "Desert Eagle",
 	damage = 45,
 	speed = 100,
 	bullet_type = 357,
