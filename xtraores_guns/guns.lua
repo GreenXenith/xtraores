@@ -4,7 +4,7 @@ local function register_gun(name, def)
 	local bdef
 
 	if def.desc then
-		udesc = def.description
+		udesc = def.desc
 	else
 		udesc = xtraores.upper(name).." Gun"
 	end
