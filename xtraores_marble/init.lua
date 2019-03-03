@@ -138,15 +138,15 @@ local function register_marble(name, def)
 
 	if minetest.get_modpath("technic_cnc") then
 		technic_cnc.register_all("xtraores_marble:"..name.."marble",
-			{cracky=3},
+			{cracky=3, not_in_creative_inventory=1},
 			{"xtraores_"..name.."marble.png"},
 		desc.."Marble")
 		technic_cnc.register_all("xtraores_marble:"..name.."marble_polished",
-			{cracky=3},
+			{cracky=3, not_in_creative_inventory=1},
 			{"xtraores_"..name.."marble_polished.png"},
 		"Polished "..desc.."Marble")
 		technic_cnc.register_all("xtraores_marble:"..name.."marble_bricks",
-			{cracky=3},
+			{cracky=3, not_in_creative_inventory=1},
 			{"xtraores_"..name.."marble_bricks.png"},
 		desc.."Marble Bricks")
 	end
