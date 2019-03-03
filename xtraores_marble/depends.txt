@@ -2,4 +2,4 @@ default
 stairs
 xtraores
 moreblocks?
-technic?
+technic_cnc?
