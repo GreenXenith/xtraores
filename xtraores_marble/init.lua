@@ -135,6 +135,21 @@ local function register_marble(name, def)
 	minetest.register_alias("xtraores:"..name.."marble_polished", "xtraores_marble:"..name.."marble_polished")
 	minetest.register_alias("xtraores:"..name.."marble_bricks", "xtraores_marble:"..name.."marble_bricks")
 	minetest.register_alias("xtraores_mblox:"..name.."marble_column", "xtraores_marble:"..name.."marble_column")
+
+	if minetest.get_modpath("technic") then
+		technic_cnc.register_all("xtraores_marble:"..name.."marble",
+			{cracky=3},
+			{"xtraores_"..name.."marble.png"},
+		desc.."Marble")
+		technic_cnc.register_all("xtraores_marble:"..name.."marble_polished",
+			{cracky=3},
+			{"xtraores_"..name.."marble_polished.png"},
+		"Polished "..desc.."Marble")
+		technic_cnc.register_all("xtraores_marble:"..name.."marble_bricks",
+			{cracky=3},
+			{"xtraores_"..name.."marble_bricks.png"},
+		desc.."Marble Bricks")
+	end
 end
 
 --Register the marble things
